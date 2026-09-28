@@ -1,0 +1,15 @@
+# временное/служебное (генерируется конвейером)
+out/
+done.json
+build.log
+minutes/
+*.ipa
+
+# node/wrangler — не в git
+node_modules/
+worker/node_modules/
+worker/.wrangler/
+
+# многословные лог/харнесс-файлы разработки
+*.bak*
+__pycache__/

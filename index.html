@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Установка приложений на iPhone</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <h1>Установка приложений на iPhone</h1>
+  <p class="header__note">Выберите приложение. Нажмите «Скачать» — установка начнётся после подтверждения в Настройках.</p>
+</header>
+
+<div class="toolbar">
+  <input id="search" type="search" placeholder="Поиск приложения..." autocomplete="off">
+  <select id="sort">
+    <option value="default">По умолчанию</option>
+    <option value="name-asc">Имя (А–Я)</option>
+    <option value="size-desc">Размер (сначала большие)</option>
+    <option value="size-asc">Размер (сначала малые)</option>
+  </select>
+</div>
+
+<main id="apps-container" class="apps"></main>
+<footer class="footer"><span id="shown-count"></span> из <span id="total-count"></span></footer>
+
+<div id="qr-modal" class="qr-modal hidden">
+  <div class="qr-modal__card">
+    <h3 id="qr-title">QR-код</h3>
+    <img id="qr-image" src="" alt="QR-код">
+    <p class="qr-modal__hint" id="qr-hint"></p>
+    <button class="qr-modal__close" id="qr-close">Закрыть</button>
+  </div>
+</div>
+
+<script>
+  // Адрес Cloudflare Worker для одноразовых QR-кодов. Заполняется при деплое.
+  window.QR_WORKER = 'https://ios-install-qr._REPLACE_.workers.dev';
+</script>
+<script src="app-store.js"></script>
+</body>
+</html>

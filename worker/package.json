@@ -1,0 +1,12 @@
+{
+  "name": "ios-install-qr",
+  "version": "1.0.0",
+  "private": true,
+  "main": "src/index.js",
+  "dependencies": {
+    "qrcode-generator": "^1.4.4"
+  },
+  "devDependencies": {
+    "wrangler": "^3"
+  }
+}
