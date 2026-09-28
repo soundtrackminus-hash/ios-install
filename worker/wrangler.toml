@@ -2,9 +2,9 @@ name = "ios-install-qr"
 main = "src/index.js"
 compatibility_date = "2025-09-01"
 
+account_id = "f1d05c09f27e15185735997347819b99"
 workers_dev = true
 
 [[kv_namespaces]]
 binding = "QR_TOKENS"
-# id заполняется после создания неймспейса: wrangler kv namespace create QR_TOKENS
-id = ""
+id = "c4b720226fc44f7e8ce868bd58911f5e"
