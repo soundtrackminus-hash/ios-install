@@ -1,1 +1,14 @@
-[]
+[
+ {
+  "name": "Яндекс Банк",
+  "version": "0.234.4",
+  "slug": "yandeks-bank",
+  "bundleId": "com.yandex.fintech.bank-app",
+  "size": 91382008,
+  "sizeFormatted": "87.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/yandeks-bank/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/yandeks-bank-0.234.4/yandeks-bank.ipa",
+  "iconUrl": "icons/yandeks-bank.png",
+  "searchTags": "yandeks_bank"
+ }
+]
