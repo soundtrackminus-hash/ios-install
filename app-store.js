@@ -9,7 +9,7 @@
     return (w && !/_REPLACE_/.test(w)) ? w.replace(/\/+$/, '') : '';
   }
 
-  // Выпустить одноразовую ссылку у воркера.
+  // Выпустить ссылку на 10 минут у воркера.
   function mintLink(slug) {
     var w = workerBase();
     if (!w) return Promise.reject(new Error('worker не настроен'));
@@ -62,7 +62,7 @@
   }
 
   function mount() {
-    // Установка: выпускаем одноразовую ссылку и уходим на неё
+    // Установка: выпускаем ссылку и уходим на неё
     container.querySelectorAll('[data-go]').forEach(function (btn) {
       btn.addEventListener('click', function () {
         var slug = decodeURIComponent(btn.getAttribute('data-go'));
@@ -83,7 +83,7 @@
       });
     });
 
-    // Копирование: кладём в буфер одноразовую ссылку
+    // Копирование: кладём в буфер выданную ссылку
     var copyBtns = container.querySelectorAll('[data-copy]');
     Array.prototype.forEach.call(copyBtns, function (btn) {
       btn.addEventListener('click', function (e) {
@@ -149,7 +149,7 @@
       return;
     }
     img.style.display = '';
-    hint.textContent = 'Код одноразовый и действует 10 минут. Наведите камеру телефона, чтобы начать установку.';
+    hint.textContent = 'Код действует 10 минут, потом перестаёт работать. Наведите камеру телефона, чтобы начать установку.';
     img.src = worker + '/api/qr/' + encodeURIComponent(slug) + '.svg?t=' + Date.now();
     modal.classList.remove('hidden');
     document.getElementById('qr-close').onclick = function () { hideQr(); };

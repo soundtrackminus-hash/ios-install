@@ -69,10 +69,9 @@ function esc(s) {
 
 function spentPage() {
   return page('Ссылка больше не работает',
-    '<h1>Эта ссылка уже использована.</h1>' +
-    '<p style="color:#6b7280">Она либо уже была открыта, либо истекла по времени.</p>' +
-    '<p>Одноразовые ссылки срабатывают один раз и живут 10 минут. ' +
-    'Откройте сайт <b>ios-install</b> и выпустите новую.</p>');
+    '<h1>Срок действия ссылки истёк.</h1>' +
+    '<p style="color:#6b7280">Ссылки живут 10 минут, потом перестают открываться.</p>' +
+    '<p>Откройте сайт <b>ios-install</b> и получите свежую.</p>');
 }
 
 function installPage(app) {
@@ -84,8 +83,8 @@ function installPage(app) {
     '<img src="' + esc(app.iconUrl) + '" alt="" style="width:64px;height:64px;border-radius:14px">' +
     '<div>Нажмите кнопку, чтобы начать установку прямо сейчас.</div></div>' +
     '<button onclick="location.href=\'' + itms + '\'">Установить сейчас</button>' +
-    '<div class="hint">Эта ссылка одноразовая: повторно открыть её уже нельзя. ' +
-    'Если установка оборвалась — зайдите на сайт ios-install и выпустите новую.</div>' +
+    '<div class="hint">Ссылка действует 10 минут с момента получения, потом перестаёт открываться. ' +
+    'Если установка оборвалась — зайдите на сайт ios-install и получите новую.</div>' +
     '<div class="hint">После нажатия откройте «Настройки» → «Основные» → «VPN и управление устройством» ' +
     'и разрешите профиль разработчика, если iPhone попросит.</div></div>' +
     '<script>setTimeout(function(){location.href="' + itms + '";},700);</script>');
@@ -109,7 +108,7 @@ export default {
       return json(200, { ok: true, ts: Date.now() });
     }
 
-    // POST|GET /api/link/<slug> -> выпустить одноразовую ссылку
+    // POST|GET /api/link/<slug> -> выпустить ссылку на 10 минут
     const linkMatch = url.pathname.match(/^\/api\/link\/([a-z0-9-]+)$/);
     if (linkMatch && (request.method === 'GET' || request.method === 'POST')) {
       const slug = linkMatch[1];
@@ -123,7 +122,7 @@ export default {
       return json(200, { url: origin + '/i/' + token, ttl: LINK_TTL });
     }
 
-    // GET /api/qr/<slug>.svg?t=... -> QR на одноразовую ссылку
+    // GET /api/qr/<slug>.svg?t=... -> QR на ссылку (10 минут)
     const qrMatch = url.pathname.match(/^\/api\/qr\/([a-z0-9-]+)\.svg$/);
     if (qrMatch && request.method === 'GET') {
       const slug = qrMatch[1];
@@ -141,14 +140,14 @@ export default {
       });
     }
 
-    // GET /i/<token> — срабатывает ровно один раз (get + delete)
+    // GET /i/<token> — работает, пока жив токен (KV TTL, 10 минут).
+    // Токен НЕ удаляем: ссылку можно переоткрыть, пока она не истекла.
     const iMatch = url.pathname.match(/^\/i\/([a-f0-9]{32})$/);
     if (iMatch && request.method === 'GET') {
       const token = iMatch[1];
       let raw;
       try {
         raw = await env.QR_TOKENS.get(token);
-        if (raw) await env.QR_TOKENS.delete(token);
       } catch (e) {
         return page('Ошибка', '<h1>Временная ошибка.</h1><p>Откройте ссылку ещё раз.</p>');
       }
