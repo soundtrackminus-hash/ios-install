@@ -252,6 +252,18 @@
   "searchTags": "relaxia"
  },
  {
+  "name": "SCB Notes",
+  "version": "1.1",
+  "slug": "scb-notes",
+  "bundleId": "org.mydiary",
+  "size": 115856662,
+  "sizeFormatted": "110.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/scb-notes/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/scb-notes-1.1/scb-notes.ipa",
+  "iconUrl": "icons/scb-notes.png",
+  "searchTags": "scb_notes"
+ },
+ {
   "name": "SlicingDices",
   "version": "1.2.1",
   "slug": "slicingdices",
