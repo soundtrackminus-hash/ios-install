@@ -2,7 +2,7 @@ import qrcode from 'qrcode-generator';
 
 const CATALOG_URL = 'https://soundtrackminus-hash.github.io/ios-install/catalog.json';
 const CACHE_TTL = 60;
-const TOKEN_TTL = 600;
+const LINK_TTL = 600;   // 10 минут, потом токен исчезает сам
 const SLUG_RE = /^[a-z0-9-]{1,64}$/;
 const TOKEN_RE = /^[a-f0-9]{32}$/;
 let catalogCache = { data: null, at: 0 };
@@ -40,16 +40,17 @@ function cors(origin) {
   };
 }
 
-function json(status, body, extra) {
+function json(status, body) {
   return new Response(JSON.stringify(body), {
     status,
-    headers: Object.assign({ 'Content-Type': 'application/json; charset=utf-8' }, cors(), extra || {}),
+    headers: Object.assign({ 'Content-Type': 'application/json; charset=utf-8' }, cors()),
   });
 }
 
 function page(title, bodyHtml) {
   return new Response('<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">' +
     '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    '<meta name="robots" content="noindex">' +
     '<title>' + title + '</title>' +
     '<style>body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:440px;' +
     'margin:2rem auto;padding:0 1rem;color:#111}h1{font-size:1.3rem}' +
@@ -62,26 +63,37 @@ function page(title, bodyHtml) {
   });
 }
 
-function installPage(app, base) {
-  const absIcon = app.iconUrl.indexOf('http') === 0 ? app.iconUrl : base + app.iconUrl;
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+function spentPage() {
+  return page('Ссылка больше не работает',
+    '<h1>Эта ссылка уже использована.</h1>' +
+    '<p style="color:#6b7280">Она либо уже была открыта, либо истекла по времени.</p>' +
+    '<p>Одноразовые ссылки срабатывают один раз и живут 10 минут. ' +
+    'Откройте сайт <b>ios-install</b> и выпустите новую.</p>');
+}
+
+function installPage(app) {
   const itms = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(app.manifestUrl);
   return page('Установить ' + app.name,
-    '<h1>Установка</h1><div class="card"><b>' + app.name + '</b>' +
-    '<div style="color:#6b7280;font-size:.85rem;margin:.3rem 0">v' + app.version + ' · ' + app.sizeFormatted + '</div>' +
+    '<h1>Установка</h1><div class="card"><b>' + esc(app.name) + '</b>' +
+    '<div style="color:#6b7280;font-size:.85rem;margin:.3rem 0">v' + esc(app.version) + ' · ' + esc(app.sizeFormatted) + '</div>' +
     '<div style="display:flex;align-items:center;gap:1rem;margin:.8rem 0">' +
-    '<img src="' + absIcon + '" alt="" style="width:64px;height:64px;border-radius:14px">' +
+    '<img src="' + esc(app.iconUrl) + '" alt="" style="width:64px;height:64px;border-radius:14px">' +
     '<div>Нажмите кнопку, чтобы начать установку прямо сейчас.</div></div>' +
     '<button onclick="location.href=\'' + itms + '\'">Установить сейчас</button>' +
+    '<div class="hint">Эта ссылка одноразовая: повторно открыть её уже нельзя. ' +
+    'Если установка оборвалась — зайдите на сайт ios-install и выпустите новую.</div>' +
     '<div class="hint">После нажатия откройте «Настройки» → «Основные» → «VPN и управление устройством» ' +
     'и разрешите профиль разработчика, если iPhone попросит.</div></div>' +
     '<script>setTimeout(function(){location.href="' + itms + '";},700);</script>');
 }
 
-function expiredPage() {
-  return page('Ссылка устарела',
-    '<h1>Эта ссылка уже использована или истекла.</h1>' +
-    '<p style="color:#6b7280">Одноразовые QR-коды действуют 10 минут и только на одну установку.</p>' +
-    '<p>Откройте сайт <b>ios-install</b> снова и сгенерируйте новый QR-код.</p>');
+async function findApp(slug) {
+  const catalog = await getCatalog();
+  return catalog.find((a) => a.slug === slug) || null;
 }
 
 export default {
@@ -93,19 +105,35 @@ export default {
       return new Response('', { status: 204, headers: cors(request.headers.get('Origin')) });
     }
 
-    // GET /api/qr/<slug>.svg?t=<cache-buster>
+    if (url.pathname === '/health') {
+      return json(200, { ok: true, ts: Date.now() });
+    }
+
+    // POST|GET /api/link/<slug> -> выпустить одноразовую ссылку
+    const linkMatch = url.pathname.match(/^\/api\/link\/([a-z0-9-]+)$/);
+    if (linkMatch && (request.method === 'GET' || request.method === 'POST')) {
+      const slug = linkMatch[1];
+      if (!SLUG_RE.test(slug)) return json(400, { error: 'invalid slug' });
+      let app;
+      try { app = await findApp(slug); }
+      catch (e) { return json(502, { error: 'catalog unavailable' }); }
+      if (!app) return json(404, { error: 'slug not found' });
+      const token = randToken();
+      await env.QR_TOKENS.put(token, JSON.stringify({ s: slug }), { expirationTtl: LINK_TTL });
+      return json(200, { url: origin + '/i/' + token, ttl: LINK_TTL });
+    }
+
+    // GET /api/qr/<slug>.svg?t=... -> QR на одноразовую ссылку
     const qrMatch = url.pathname.match(/^\/api\/qr\/([a-z0-9-]+)\.svg$/);
     if (qrMatch && request.method === 'GET') {
       const slug = qrMatch[1];
       if (!SLUG_RE.test(slug)) return json(400, { error: 'invalid slug' });
-      let catalog;
-      try { catalog = await getCatalog(); }
+      let app;
+      try { app = await findApp(slug); }
       catch (e) { return json(502, { error: 'catalog unavailable' }); }
-      const app = catalog.find((a) => a.slug === slug);
       if (!app) return json(404, { error: 'slug not found' });
-
       const token = randToken();
-      await env.QR_TOKENS.put(token, JSON.stringify({ slug }), { expirationTtl: TOKEN_TTL });
+      await env.QR_TOKENS.put(token, JSON.stringify({ s: slug }), { expirationTtl: LINK_TTL });
       const svg = qrSvg(origin + '/i/' + token);
       return new Response(svg, {
         status: 200,
@@ -113,33 +141,24 @@ export default {
       });
     }
 
-    // GET /i/<token> — одноразовая установка
-    const installMatch = url.pathname.match(/^\/i\/([a-f0-9]{32})$/);
-    if (installMatch && request.method === 'GET') {
-      const token = installMatch[1];
-      let val;
+    // GET /i/<token> — срабатывает ровно один раз (get + delete)
+    const iMatch = url.pathname.match(/^\/i\/([a-f0-9]{32})$/);
+    if (iMatch && request.method === 'GET') {
+      const token = iMatch[1];
+      let raw;
       try {
-        val = await env.QR_TOKENS.get(token);
-        if (val) await env.QR_TOKENS.delete(token);
+        raw = await env.QR_TOKENS.get(token);
+        if (raw) await env.QR_TOKENS.delete(token);
       } catch (e) {
-        return page('Ошибка', '<h1>Временная ошибка.</h1><p>Попробуйте открыть ссылку ещё раз.</p>');
+        return page('Ошибка', '<h1>Временная ошибка.</h1><p>Откройте ссылку ещё раз.</p>');
       }
-      if (!val) return expiredPage();
-      let payload;
-      try { payload = JSON.parse(val); } catch (e) { return expiredPage(); }
-      let catalog, app;
-      try {
-        catalog = await getCatalog();
-        app = catalog.find((a) => a.slug === payload.slug);
-      } catch (e) { /* fallthrough */ }
-      if (!app) return expiredPage();
-      const base = CATALOG_URL.replace(/catalog\.json$/, '');
-      return installPage(app, base);
-    }
-
-    // GET /health
-    if (url.pathname === '/health') {
-      return json(200, { ok: true, ts: Date.now() });
+      if (!raw) return spentPage();
+      let p;
+      try { p = JSON.parse(raw); } catch (e) { return spentPage(); }
+      let app;
+      try { app = await findApp(p.s); } catch (e) { app = null; }
+      if (!app) return spentPage();
+      return installPage(app);
     }
 
     return json(404, { error: 'not found' });

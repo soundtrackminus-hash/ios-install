@@ -4,11 +4,24 @@
   var container = document.getElementById('apps-container');
   var APPS = [];
 
-  function installUrl(app) {
-    return 'itms-services://?action=download-manifest&url=' + encodeURIComponent(app.manifestUrl);
+  function workerBase() {
+    var w = window.QR_WORKER || '';
+    return (w && !/_REPLACE_/.test(w)) ? w.replace(/\/+$/, '') : '';
+  }
+
+  // Выпустить одноразовую ссылку у воркера.
+  function mintLink(slug) {
+    var w = workerBase();
+    if (!w) return Promise.reject(new Error('worker не настроен'));
+    return fetch(w + '/api/link/' + encodeURIComponent(slug))
+      .then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status);
+        return r.json();
+      });
   }
 
   function cardHtml(app) {
+    var slug = encodeURIComponent(app.slug);
     return '' +
       '<article class="app-card" data-tags="' + (app.searchTags || '') + ' ' + (app.name || '').toLowerCase() + '">' +
         '<div class="app-card__head">' +
@@ -19,10 +32,10 @@
           '</div>' +
         '</div>' +
         '<div class="app-card__actions">' +
-          '<button class="btn btn-install" onclick="window.location=\'' + installUrl(app).replace(/'/g, "%27") + '\'">Скачать и установить</button>' +
+          '<button class="btn btn-install" data-go="' + slug + '">Скачать и установить</button>' +
           '<div class="btn-row">' +
-            '<button class="btn btn-ghost" data-copy="' + installUrl(app).replace(/"/g, "&quot;") + '" data-label="Скопировать ссылку">Скопировать ссылку</button>' +
-            '<button class="btn btn-ghost" data-qr="' + encodeURIComponent(app.slug) + '" data-qrname="' + (app.name || '').replace(/"/g, "&quot;") + '">QR-код</button>' +
+            '<button class="btn btn-ghost" data-copy="' + slug + '" data-label="Скопировать ссылку">Скопировать ссылку</button>' +
+            '<button class="btn btn-ghost" data-qr="' + slug + '" data-qrname="' + (app.name || '').replace(/"/g, "&quot;") + '">QR-код</button>' +
           '</div>' +
         '</div>' +
       '</article>';
@@ -49,21 +62,42 @@
   }
 
   function mount() {
+    // Установка: выпускаем одноразовую ссылку и уходим на неё
+    container.querySelectorAll('[data-go]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var slug = decodeURIComponent(btn.getAttribute('data-go'));
+        if (!workerBase()) {
+          btn.textContent = 'Сервер не настроен';
+          return;
+        }
+        var old = btn.textContent;
+        btn.textContent = 'Готовим ссылку…';
+        btn.disabled = true;
+        mintLink(slug).then(function (r) {
+          window.location.href = r.url;
+        }).catch(function (err) {
+          btn.textContent = 'Ошибка: ' + err.message;
+          btn.disabled = false;
+          setTimeout(function () { btn.textContent = old; }, 2500);
+        });
+      });
+    });
+
+    // Копирование: кладём в буфер одноразовую ссылку
     var copyBtns = container.querySelectorAll('[data-copy]');
     Array.prototype.forEach.call(copyBtns, function (btn) {
       btn.addEventListener('click', function (e) {
         e.preventDefault();
-        var url = btn.getAttribute('data-copy');
-        btn.textContent = '✓ Готово';
-        if (navigator.clipboard && navigator.clipboard.writeText) {
-          navigator.clipboard.writeText(url).then(function () {
-            setTimeout(function () { btn.textContent = btn.getAttribute('data-label'); }, 1500);
-          }).catch(function () {
-            fallbackCopy(url, btn);
-          });
-        } else {
-          fallbackCopy(url, btn);
-        }
+        var slug = decodeURIComponent(btn.getAttribute('data-copy'));
+        var label = btn.getAttribute('data-label');
+        if (!workerBase()) { btn.textContent = 'Сервер не настроен'; return; }
+        btn.textContent = 'Готовим ссылку…';
+        mintLink(slug).then(function (r) {
+          copyText(r.url, btn, label);
+        }).catch(function (err) {
+          btn.textContent = 'Ошибка: ' + err.message;
+          setTimeout(function () { btn.textContent = label; }, 2500);
+        });
       });
     });
     container.querySelectorAll('[data-qr]').forEach(function (btn) {
@@ -73,7 +107,20 @@
     });
   }
 
-  function fallbackCopy(url, btn) {
+  function copyText(url, btn, label) {
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(url).then(function () {
+        btn.textContent = '✓ Скопировано';
+        setTimeout(function () { btn.textContent = label; }, 1500);
+      }).catch(function () {
+        fallbackCopy(url, btn, label);
+      });
+    } else {
+      fallbackCopy(url, btn, label);
+    }
+  }
+
+  function fallbackCopy(url, btn, label) {
     var ta = document.createElement('textarea');
     ta.value = url;
     ta.style.position = 'fixed';
@@ -83,8 +130,8 @@
     ta.select();
     try { document.execCommand('copy'); } catch (e) {}
     document.body.removeChild(ta);
-    btn.textContent = '✓ Готово';
-    setTimeout(function () { btn.textContent = btn.getAttribute('data-label'); }, 1500);
+    btn.textContent = '✓ Скопировано';
+    setTimeout(function () { btn.textContent = label; }, 1500);
   }
 
   function showQr(slug, name) {
