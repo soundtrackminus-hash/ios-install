@@ -684,6 +684,18 @@
   "searchTags": "splitactivities_sapp"
  },
  {
+  "name": "Spotluma",
+  "version": "2.8.2",
+  "slug": "spotluma",
+  "bundleId": "app.cleanorder.hudorban",
+  "size": 467140301,
+  "sizeFormatted": "445.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/spotluma/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/spotluma-2.8.2/spotluma.ipa",
+  "iconUrl": "icons/spotluma.png",
+  "searchTags": "spotluma"
+ },
+ {
   "name": "Stick Tennis",
   "version": "2.24.2",
   "slug": "stick-tennis",
