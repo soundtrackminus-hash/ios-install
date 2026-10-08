@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://github.com/soundtrackminus-hash/ios-install/releases/download/v2raytun-2.4.7/v2raytun.ipa</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.databridges.privacy.v2RayTun</string>
+				<key>bundle-version</key>
+				<string>2.4.7</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>v2RayTun</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

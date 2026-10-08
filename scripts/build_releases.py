@@ -20,6 +20,7 @@ BASE = Path("/root/projects/ios-install")
 OUT = BASE / "out"                # временные загрузки
 DONE = BASE / "done.json"         # словарь slug -> {fileId, sha256, size}
 LOG = BASE / "build.log"
+MAX_ASSET = 2_000_000_000   # лимит одного ассета в GitHub Releases
 TMPIPA = "/root/.cache/ipa_work"  # НЕ /tmp: там tmpfs 962 МБ, крупные IPA не влезают
 
 import requests
@@ -205,6 +206,20 @@ def main():
     done = {}
     if DONE.exists():
         done = json.loads(DONE.read_text())
+    # Имена уже размещённых приложений: по ним отсекаем перезаливки.
+    # Сравниваем через slugify — он транслитерирует кириллицу, в отличие от
+    # голого re.sub(r"[^a-z0-9]+"), который схлопывает русские имена в "".
+    placed = set()
+    for _v in done.values():
+        # Только успешные: у провалившихся записей тоже есть name, иначе
+        # предохранитель пропускал бы их как «дубли» и они никогда не повторились бы.
+        if _v.get("status") != "ok":
+            continue
+        _n = _v.get("name")
+        if _n:
+            placed.add(slugify(Path(_n).stem))
+    log("уже размещено имён: %d" % len(placed))
+
     catalog = []
 
     for fi in files:
@@ -218,6 +233,17 @@ def main():
                 catalog.append(prev)
             else:
                 log("  ВНИМАНИЕ: у %s нет сохранённого entry, каталог будет неполным" % name)
+            continue
+        # Дубль перезаливки: такое приложение уже размещено на сайте.
+        # Проверяем ДО скачивания, чтобы не тянуть гигабайты впустую.
+        if slugify(Path(name).stem) in placed:
+            log("skip %s (дубль: такое уже размещено)" % name)
+            continue
+        # Ассет в GitHub Releases ограничен 2 ГБ — крупнее не загрузить,
+        # поэтому не тратим на них время и место.
+        if expect > MAX_ASSET:
+            log("skip %s (%d МБ) — больше лимита ассета в 2 ГБ"
+                % (name, expect // 1048576))
             continue
         ipa = os.path.join(TMPIPA, "%s.ipa" % fid)
         cur = ipa

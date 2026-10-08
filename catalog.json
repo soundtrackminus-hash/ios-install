@@ -1,5 +1,17 @@
 [
  {
+  "name": "ALROSA Air Company",
+  "version": "2.1.40",
+  "slug": "alrosa-air-company",
+  "bundleId": "com.alrosa",
+  "size": 109186576,
+  "sizeFormatted": "104.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/alrosa-air-company/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/alrosa-air-company-2.1.40/alrosa-air-company.ipa",
+  "iconUrl": "icons/alrosa-air-company.png",
+  "searchTags": "alrosa_air_company"
+ },
+ {
   "name": "Anero",
   "version": "230.1",
   "slug": "anero",
@@ -10,6 +22,42 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/anero-230.1/anero.ipa",
   "iconUrl": "icons/anero.png",
   "searchTags": "anero"
+ },
+ {
+  "name": "Angry Birds",
+  "version": "8.0.3",
+  "slug": "angry-birds",
+  "bundleId": "com.clickgamer.AngryBirds",
+  "size": 110874128,
+  "sizeFormatted": "105.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/angry-birds/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/angry-birds-8.0.3/angry-birds.ipa",
+  "iconUrl": "icons/angry-birds.png",
+  "searchTags": "angry_birds"
+ },
+ {
+  "name": "Angry Birds",
+  "version": "2.2.13",
+  "slug": "angry-birds-pace",
+  "bundleId": "com.rovio.AngryBirdsSpace",
+  "size": 61603370,
+  "sizeFormatted": "58.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/angry-birds-pace/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/angry-birds-pace-2.2.13/angry-birds-pace.ipa",
+  "iconUrl": "icons/angry-birds-pace.png",
+  "searchTags": "angry_birds_pace"
+ },
+ {
+  "name": "Asphalt7",
+  "version": "1.8.1",
+  "slug": "asphalt7",
+  "bundleId": "com.gameloft.Asphalt7",
+  "size": 1421382952,
+  "sizeFormatted": "1355.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/asphalt7/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/asphalt7-1.8.1/asphalt7.ipa",
+  "iconUrl": "icons/asphalt7.png",
+  "searchTags": "asphalt7"
  },
  {
   "name": "ATOY",
@@ -24,6 +72,126 @@
   "searchTags": "atoy"
  },
  {
+  "name": "Batman",
+  "version": "10499.38",
+  "slug": "batman",
+  "bundleId": "com.wb.ArkhamCity",
+  "size": 621537922,
+  "sizeFormatted": "592.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/batman/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/batman-10499.38/batman.ipa",
+  "iconUrl": "icons/batman.png",
+  "searchTags": "batman"
+ },
+ {
+  "name": "BFBC 2",
+  "version": "1.0.2",
+  "slug": "bfbc-2",
+  "bundleId": "com.ea.bcbf2.bv",
+  "size": 281810449,
+  "sizeFormatted": "268.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/bfbc-2/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/bfbc-2-1.0.2/bfbc-2.ipa",
+  "iconUrl": "icons/bfbc-2.png",
+  "searchTags": "bfbc_2"
+ },
+ {
+  "name": "Carmageddon",
+  "version": "1.8",
+  "slug": "carmageddon",
+  "bundleId": "com.stainlessgames.nicholas",
+  "size": 115119095,
+  "sizeFormatted": "109.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/carmageddon/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/carmageddon-1.8/carmageddon.ipa",
+  "iconUrl": "icons/carmageddon.png",
+  "searchTags": "carmageddon"
+ },
+ {
+  "name": "Cloud Mail",
+  "version": "9.92.0",
+  "slug": "cloud-mail",
+  "bundleId": "ru.mail.cloud",
+  "size": 402332215,
+  "sizeFormatted": "383.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/cloud-mail/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/cloud-mail-9.92.0/cloud-mail.ipa",
+  "iconUrl": "icons/cloud-mail.png",
+  "searchTags": "cloud_mail"
+ },
+ {
+  "name": "CSR Racing 2",
+  "version": "6.7.2",
+  "slug": "csr-racing-2",
+  "bundleId": "com.naturalmotion.customstreetracer2",
+  "size": 1477801056,
+  "sizeFormatted": "1409.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/csr-racing-2/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/csr-racing-2-6.7.2/csr-racing-2.ipa",
+  "iconUrl": "icons/csr-racing-2.png",
+  "searchTags": "csr_racing_2"
+ },
+ {
+  "name": "csr4c3",
+  "version": "5.1.5",
+  "slug": "csr4c3",
+  "bundleId": "com.naturalmotion.csr4c3",
+  "size": 367849788,
+  "sizeFormatted": "350.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/csr4c3/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/csr4c3-5.1.5/csr4c3.ipa",
+  "iconUrl": "icons/csr4c3.png",
+  "searchTags": "csr4c3"
+ },
+ {
+  "name": "drdriving",
+  "version": "1.70",
+  "slug": "drdriving",
+  "bundleId": "com.ansangha.drdriving",
+  "size": 15378317,
+  "sizeFormatted": "14.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/drdriving/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/drdriving-1.70/drdriving.ipa",
+  "iconUrl": "icons/drdriving.png",
+  "searchTags": "drdriving"
+ },
+ {
+  "name": "F1 Mobile",
+  "version": "5.4.11",
+  "slug": "f1-mobile",
+  "bundleId": "com.codemasters.f1mobile",
+  "size": 1468241501,
+  "sizeFormatted": "1400.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/f1-mobile/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/f1-mobile-5.4.11/f1-mobile.ipa",
+  "iconUrl": "icons/f1-mobile.png",
+  "searchTags": "f1_mobile"
+ },
+ {
+  "name": "Fieldrunners",
+  "version": "1.8.180368",
+  "slug": "fieldrunners",
+  "bundleId": "com.subatomicstudios.Fieldrunners",
+  "size": 66578414,
+  "sizeFormatted": "63.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/fieldrunners/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/fieldrunners-1.8.180368/fieldrunners.ipa",
+  "iconUrl": "icons/fieldrunners.png",
+  "searchTags": "fieldrunners"
+ },
+ {
+  "name": "Fieldrunners2",
+  "version": "1.9.180445",
+  "slug": "fieldrunners2",
+  "bundleId": "fieldrunners2.iphone",
+  "size": 72357100,
+  "sizeFormatted": "69.0 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/fieldrunners2/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/fieldrunners2-1.9.180445/fieldrunners2.ipa",
+  "iconUrl": "icons/fieldrunners2.png",
+  "searchTags": "fieldrunners2"
+ },
+ {
   "name": "FileHub",
   "version": "10.3.5",
   "slug": "filehub",
@@ -36,6 +204,18 @@
   "searchTags": "filehub"
  },
  {
+  "name": "FinNews",
+  "version": "4.17.0",
+  "slug": "finnews",
+  "bundleId": "org.news.finance.io",
+  "size": 193402491,
+  "sizeFormatted": "184.4 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/finnews/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/finnews-4.17.0/finnews.ipa",
+  "iconUrl": "icons/finnews.png",
+  "searchTags": "finnews"
+ },
+ {
   "name": "FuelInTime",
   "version": "1.3",
   "slug": "fuelintime",
@@ -46,6 +226,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/fuelintime-1.3/fuelintime.ipa",
   "iconUrl": "icons/fuelintime.png",
   "searchTags": "fuelintime"
+ },
+ {
+  "name": "gangstar3",
+  "version": "1.4.11",
+  "slug": "gangstar3",
+  "bundleId": "com.gameloft.gangstar3",
+  "size": 889390634,
+  "sizeFormatted": "848.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/gangstar3/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/gangstar3-1.4.11/gangstar3.ipa",
+  "iconUrl": "icons/gangstar3.png",
+  "searchTags": "gangstar3"
  },
  {
   "name": "GetQuot",
@@ -94,6 +286,42 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/happ-plus-5.3.0/happ-plus.ipa",
   "iconUrl": "icons/happ-plus.png",
   "searchTags": "happ_plus"
+ },
+ {
+  "name": "Haraba",
+  "version": "6.1.13",
+  "slug": "haraba",
+  "bundleId": "ru.haraba",
+  "size": 167702468,
+  "sizeFormatted": "159.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/haraba/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/haraba-6.1.13/haraba.ipa",
+  "iconUrl": "icons/haraba.png",
+  "searchTags": "haraba"
+ },
+ {
+  "name": "HitProxy",
+  "version": "1.4",
+  "slug": "hitproxy",
+  "bundleId": "com.airsharp.hitproxy",
+  "size": 61309025,
+  "sizeFormatted": "58.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/hitproxy/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/hitproxy-1.4/hitproxy.ipa",
+  "iconUrl": "icons/hitproxy.png",
+  "searchTags": "hitproxy"
+ },
+ {
+  "name": "Hot Pursuit",
+  "version": "1.3.47",
+  "slug": "hot-pursuit",
+  "bundleId": "com.ea.nfshp.bv",
+  "size": 601139349,
+  "sizeFormatted": "573.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/hot-pursuit/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/hot-pursuit-1.3.47/hot-pursuit.ipa",
+  "iconUrl": "icons/hot-pursuit.png",
+  "searchTags": "hot_pursuit"
  },
  {
   "name": "iManager",
@@ -156,6 +384,42 @@
   "searchTags": "infinityblade3"
  },
  {
+  "name": "Jetpack",
+  "version": "1.104.1",
+  "slug": "jetpack",
+  "bundleId": "com.halfbrick.jetpack",
+  "size": 351384886,
+  "sizeFormatted": "335.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/jetpack/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/jetpack-1.104.1/jetpack.ipa",
+  "iconUrl": "icons/jetpack.png",
+  "searchTags": "jetpack"
+ },
+ {
+  "name": "Kafario",
+  "version": "2.1.0",
+  "slug": "kafario",
+  "bundleId": "com.samuelfab.kafario",
+  "size": 38620943,
+  "sizeFormatted": "36.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/kafario/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/kafario-2.1.0/kafario.ipa",
+  "iconUrl": "icons/kafario.png",
+  "searchTags": "kafario"
+ },
+ {
+  "name": "Kingdom Rush",
+  "version": "6.4.22",
+  "slug": "kingdom-rush",
+  "bundleId": "com.armorgames.kingdomrushiphone",
+  "size": 146601071,
+  "sizeFormatted": "139.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/kingdom-rush/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/kingdom-rush-6.4.22/kingdom-rush.ipa",
+  "iconUrl": "icons/kingdom-rush.png",
+  "searchTags": "kingdom_rush"
+ },
+ {
   "name": "MAX",
   "version": "26.17.3",
   "slug": "max",
@@ -178,6 +442,42 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/most-wanted-1.1.3/most-wanted.ipa",
   "iconUrl": "icons/most-wanted.png",
   "searchTags": "most_wanted"
+ },
+ {
+  "name": "Move Up",
+  "version": "1.2",
+  "slug": "move-up",
+  "bundleId": "com.moveupwithai.app",
+  "size": 287297350,
+  "sizeFormatted": "274.0 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/move-up/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/move-up-1.2/move-up.ipa",
+  "iconUrl": "icons/move-up.png",
+  "searchTags": "move_up"
+ },
+ {
+  "name": "NFS Shift 2",
+  "version": "1.2.95",
+  "slug": "nfs-shift-2",
+  "bundleId": "com.ea.nfss2.bv",
+  "size": 325813434,
+  "sizeFormatted": "310.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/nfs-shift-2/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/nfs-shift-2-1.2.95/nfs-shift-2.ipa",
+  "iconUrl": "icons/nfs-shift-2.png",
+  "searchTags": "nfs_shift_2"
+ },
+ {
+  "name": "NFSU",
+  "version": "1.2.5",
+  "slug": "nfsu",
+  "bundleId": "com.ea.nfsucbven",
+  "size": 99856166,
+  "sizeFormatted": "95.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/nfsu/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/nfsu-1.2.5/nfsu.ipa",
+  "iconUrl": "icons/nfsu.png",
+  "searchTags": "nfsu"
  },
  {
   "name": "Notion",
@@ -216,6 +516,18 @@
   "searchTags": "online"
  },
  {
+  "name": "PerryGame",
+  "version": "1.7.7",
+  "slug": "perrygame",
+  "bundleId": "com.disney.PerryGame",
+  "size": 77050691,
+  "sizeFormatted": "73.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/perrygame/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/perrygame-1.7.7/perrygame.ipa",
+  "iconUrl": "icons/perrygame.png",
+  "searchTags": "perrygame"
+ },
+ {
   "name": "PianoWave",
   "version": "1.2.0",
   "slug": "pianowave",
@@ -240,6 +552,18 @@
   "searchTags": "real_racing_2"
  },
  {
+  "name": "Real Racing 3",
+  "version": "14.0.1",
+  "slug": "real-racing-3",
+  "bundleId": "com.ea.realracing3.bv",
+  "size": 1402396579,
+  "sizeFormatted": "1337.4 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/real-racing-3/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/real-racing-3-14.0.1/real-racing-3.ipa",
+  "iconUrl": "icons/real-racing-3.png",
+  "searchTags": "real_racing_3"
+ },
+ {
   "name": "Relaxia",
   "version": "2.6",
   "slug": "relaxia",
@@ -250,6 +574,30 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/relaxia-2.6/relaxia.ipa",
   "iconUrl": "icons/relaxia.png",
   "searchTags": "relaxia"
+ },
+ {
+  "name": "RStudio",
+  "version": "1.0.2",
+  "slug": "rstudio",
+  "bundleId": "com.tech.rstudio",
+  "size": 44941061,
+  "sizeFormatted": "42.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/rstudio/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/rstudio-1.0.2/rstudio.ipa",
+  "iconUrl": "icons/rstudio.png",
+  "searchTags": "rstudio"
+ },
+ {
+  "name": "RUTUBE",
+  "version": "46.6",
+  "slug": "rutube",
+  "bundleId": "ru.rutube.main",
+  "size": 54710123,
+  "sizeFormatted": "52.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/rutube/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/rutube-46.6/rutube.ipa",
+  "iconUrl": "icons/rutube.png",
+  "searchTags": "rutube"
  },
  {
   "name": "SCB Notes",
@@ -264,6 +612,18 @@
   "searchTags": "scb_notes"
  },
  {
+  "name": "Shedevrus",
+  "version": "11.12.1",
+  "slug": "shedevrus",
+  "bundleId": "com.yandex.shedevrus",
+  "size": 83531495,
+  "sizeFormatted": "79.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/shedevrus/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/shedevrus-11.12.1/shedevrus.ipa",
+  "iconUrl": "icons/shedevrus.png",
+  "searchTags": "shedevrus"
+ },
+ {
   "name": "SlicingDices",
   "version": "1.2.1",
   "slug": "slicingdices",
@@ -274,6 +634,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/slicingdices-1.2.1/slicingdices.ipa",
   "iconUrl": "icons/slicingdices.png",
   "searchTags": "slicingdices"
+ },
+ {
+  "name": "Solar Walk",
+  "version": "2.5.5",
+  "slug": "solar-walk",
+  "bundleId": "com.vitotechnology.SolarWalk",
+  "size": 283489892,
+  "sizeFormatted": "270.4 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/solar-walk/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/solar-walk-2.5.5/solar-walk.ipa",
+  "iconUrl": "icons/solar-walk.png",
+  "searchTags": "solar_walk"
  },
  {
   "name": "SpeakaBoo",
@@ -312,16 +684,28 @@
   "searchTags": "splitactivities_sapp"
  },
  {
-  "name": "Spotluma",
-  "version": "2.8.2",
-  "slug": "spotluma",
-  "bundleId": "app.cleanorder.hudorban",
-  "size": 467140301,
-  "sizeFormatted": "445.5 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/spotluma/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/spotluma-2.8.2/spotluma.ipa",
-  "iconUrl": "icons/spotluma.png",
-  "searchTags": "spotluma"
+  "name": "Stick Tennis",
+  "version": "2.24.2",
+  "slug": "stick-tennis",
+  "bundleId": "com.sticksports.sticktennis",
+  "size": 25345691,
+  "sizeFormatted": "24.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/stick-tennis/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/stick-tennis-2.24.2/stick-tennis.ipa",
+  "iconUrl": "icons/stick-tennis.png",
+  "searchTags": "stick_tennis"
+ },
+ {
+  "name": "Streisand",
+  "version": "1.6.76",
+  "slug": "streisand",
+  "bundleId": "com.effect.streisand",
+  "size": 156791497,
+  "sizeFormatted": "149.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/streisand/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/streisand-1.6.76/streisand.ipa",
+  "iconUrl": "icons/streisand.png",
+  "searchTags": "streisand"
  },
  {
   "name": "Teboil",
@@ -334,6 +718,42 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/teboil-1.6.4/teboil.ipa",
   "iconUrl": "icons/teboil.png",
   "searchTags": "teboil"
+ },
+ {
+  "name": "Texas Poker Holdem",
+  "version": "11.4.0",
+  "slug": "texas-poker-holdem",
+  "bundleId": "com.iphonesoft3g.texaspokerru",
+  "size": 134433428,
+  "sizeFormatted": "128.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/texas-poker-holdem/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/texas-poker-holdem-11.4.0/texas-poker-holdem.ipa",
+  "iconUrl": "icons/texas-poker-holdem.png",
+  "searchTags": "texas_poker_holdem"
+ },
+ {
+  "name": "v2RayTun",
+  "version": "2.4.7",
+  "slug": "v2raytun",
+  "bundleId": "com.databridges.privacy.v2RayTun",
+  "size": 100580634,
+  "sizeFormatted": "95.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/v2raytun/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/v2raytun-2.4.7/v2raytun.ipa",
+  "iconUrl": "icons/v2raytun.png",
+  "searchTags": "v2raytun"
+ },
+ {
+  "name": "VirtuaTennis",
+  "version": "4.0.1",
+  "slug": "virtuatennis",
+  "bundleId": "com.sega.virtuatennischallenge",
+  "size": 329890016,
+  "sizeFormatted": "314.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/virtuatennis/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/virtuatennis-4.0.1/virtuatennis.ipa",
+  "iconUrl": "icons/virtuatennis.png",
+  "searchTags": "virtuatennis"
  },
  {
   "name": "VK",
@@ -372,6 +792,42 @@
   "searchTags": "vk_video"
  },
  {
+  "name": "WheresMyWater",
+  "version": "1.18.9",
+  "slug": "wheresmywater",
+  "bundleId": "com.disney.SwampyGame",
+  "size": 69161190,
+  "sizeFormatted": "66.0 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/wheresmywater/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/wheresmywater-1.18.9/wheresmywater.ipa",
+  "iconUrl": "icons/wheresmywater.png",
+  "searchTags": "wheresmywater"
+ },
+ {
+  "name": "WheresMyWater2",
+  "version": "1.9.44",
+  "slug": "wheresmywater2",
+  "bundleId": "com.disney.wheresmywater2",
+  "size": 140088233,
+  "sizeFormatted": "133.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/wheresmywater2/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/wheresmywater2-1.9.44/wheresmywater2.ipa",
+  "iconUrl": "icons/wheresmywater2.png",
+  "searchTags": "wheresmywater2"
+ },
+ {
+  "name": "World of Goo",
+  "version": "1.6",
+  "slug": "world-of-goo",
+  "bundleId": "com.2dboy.worldofgoo",
+  "size": 98678671,
+  "sizeFormatted": "94.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/world-of-goo/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/world-of-goo-1.6/world-of-goo.ipa",
+  "iconUrl": "icons/world-of-goo.png",
+  "searchTags": "world_of_goo"
+ },
+ {
   "name": "Авито",
   "version": "200.5",
   "slug": "avito",
@@ -408,6 +864,18 @@
   "searchTags": "ak_bars_bank"
  },
  {
+  "name": "Альфа-Банк",
+  "version": "12.14.1",
+  "slug": "alfa-bank",
+  "bundleId": "com.alfabank.app",
+  "size": 331775014,
+  "sizeFormatted": "316.4 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/alfa-bank/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/alfa-bank-12.14.1/alfa-bank.ipa",
+  "iconUrl": "icons/alfa-bank.png",
+  "searchTags": "alfa_bank"
+ },
+ {
   "name": "Афина бюджет",
   "version": "1.7.2",
   "slug": "afina-byudzhet",
@@ -430,6 +898,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/bak-bonus-1.1.1/bak-bonus.ipa",
   "iconUrl": "icons/bak-bonus.png",
   "searchTags": "bak_bonus"
+ },
+ {
+  "name": "Бахетле",
+  "version": "1.1.1",
+  "slug": "bakhetle",
+  "bundleId": "com.bahetle.card",
+  "size": 8509753,
+  "sizeFormatted": "8.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/bakhetle/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/bakhetle-1.1.1/bakhetle.ipa",
+  "iconUrl": "icons/bakhetle.png",
+  "searchTags": "bakhetle"
  },
  {
   "name": "Без наличных",
@@ -480,6 +960,30 @@
   "searchTags": "zdorove"
  },
  {
+  "name": "Календарь: Умный Помощник",
+  "version": "1.4.1",
+  "slug": "kalendar-umnyy-pomoshchnik",
+  "bundleId": "com.sdisk.mcd",
+  "size": 61734825,
+  "sizeFormatted": "58.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/kalendar-umnyy-pomoshchnik/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/kalendar-umnyy-pomoshchnik-1.4.1/kalendar-umnyy-pomoshchnik.ipa",
+  "iconUrl": "icons/kalendar-umnyy-pomoshchnik.png",
+  "searchTags": "kalendar_umnyy_pomoshchnik"
+ },
+ {
+  "name": "Карта Жителя",
+  "version": "2.7.0",
+  "slug": "karta-zhitelya",
+  "bundleId": "ru.akbars.cardj",
+  "size": 96979206,
+  "sizeFormatted": "92.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/karta-zhitelya/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/karta-zhitelya-2.7.0/karta-zhitelya.ipa",
+  "iconUrl": "icons/karta-zhitelya.png",
+  "searchTags": "karta_zhitelya"
+ },
+ {
   "name": "Легко",
   "version": "6.89.0",
   "slug": "legko",
@@ -492,6 +996,42 @@
   "searchTags": "legko"
  },
  {
+  "name": "ЛУКОЙЛ",
+  "version": "4.11.0",
+  "slug": "lukoyl",
+  "bundleId": "eae.potemka.LUKOIL",
+  "size": 185072279,
+  "sizeFormatted": "176.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/lukoyl/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/lukoyl-4.11.0/lukoyl.ipa",
+  "iconUrl": "icons/lukoyl.png",
+  "searchTags": "lukoyl"
+ },
+ {
+  "name": "Луна",
+  "version": "6.7.3",
+  "slug": "luna",
+  "bundleId": "com.sapphire.browser",
+  "size": 297443088,
+  "sizeFormatted": "283.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/luna/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/luna-6.7.3/luna.ipa",
+  "iconUrl": "icons/luna.png",
+  "searchTags": "luna"
+ },
+ {
+  "name": "Любовь и гуси",
+  "version": "2026.09.20",
+  "slug": "lyubov-i-gusi",
+  "bundleId": "com.loveapp.gooses",
+  "size": 180889593,
+  "sizeFormatted": "172.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/lyubov-i-gusi/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/lyubov-i-gusi-2026.09.20/lyubov-i-gusi.ipa",
+  "iconUrl": "icons/lyubov-i-gusi.png",
+  "searchTags": "lyubov_i_gusi"
+ },
+ {
   "name": "Мобио",
   "version": "1.0.2",
   "slug": "mobio",
@@ -502,6 +1042,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/mobio-1.0.2/mobio.ipa",
   "iconUrl": "icons/mobio.png",
   "searchTags": "mobio"
+ },
+ {
+  "name": "МТС Инвестиции",
+  "version": "4.77.0",
+  "slug": "mts-investitsii",
+  "bundleId": "com.sistema-capital.finservice",
+  "size": 121380353,
+  "sizeFormatted": "115.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/mts-investitsii/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/mts-investitsii-4.77.0/mts-investitsii.ipa",
+  "iconUrl": "icons/mts-investitsii.png",
+  "searchTags": "mts_investitsii"
  },
  {
   "name": "Почта Mail.ru",
@@ -540,6 +1092,30 @@
   "searchTags": "siyanie"
  },
  {
+  "name": "Тинькофф",
+  "version": "6.13.5",
+  "slug": "tinkoff",
+  "bundleId": "ru.tcsbank.mobileclient",
+  "size": 322975702,
+  "sizeFormatted": "308.0 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/tinkoff/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/tinkoff-6.13.5/tinkoff.ipa",
+  "iconUrl": "icons/tinkoff.png",
+  "searchTags": "tinkoff"
+ },
+ {
+  "name": "Учим слова",
+  "version": "1.02",
+  "slug": "uchim-slova-main",
+  "bundleId": "st.learner.main",
+  "size": 285945630,
+  "sizeFormatted": "272.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/uchim-slova-main/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/uchim-slova-main-1.02/uchim-slova-main.ipa",
+  "iconUrl": "icons/uchim-slova-main.png",
+  "searchTags": "uchim_slova_main"
+ },
+ {
   "name": "Учим слова",
   "version": "1.02",
   "slug": "uchim-slova",
@@ -550,6 +1126,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/uchim-slova-1.02/uchim-slova.ipa",
   "iconUrl": "icons/uchim-slova.png",
   "searchTags": "uchim_slova"
+ },
+ {
+  "name": "ЮMoney",
+  "version": "11.12.0",
+  "slug": "yumoney-oney",
+  "bundleId": "ru.yoo.money",
+  "size": 234978412,
+  "sizeFormatted": "224.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/yumoney-oney/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/yumoney-oney-11.12.0/yumoney-oney.ipa",
+  "iconUrl": "icons/yumoney-oney.png",
+  "searchTags": "yumoney_oney"
  },
  {
   "name": "ЮMoney",
