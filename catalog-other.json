@@ -156,6 +156,18 @@
   "searchTags": "o_raiffeisen"
  },
  {
+  "name": "Room Assist",
+  "version": "1.0.1",
+  "slug": "o-room-assist",
+  "bundleId": "online.roomtop.householdings",
+  "size": 157136956,
+  "sizeFormatted": "149.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-room-assist/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-room-assist-1.0.1/o-room-assist.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-room-assist.png",
+  "searchTags": "o_room_assist"
+ },
+ {
   "name": "RStudio",
   "version": "1.0.2",
   "slug": "o-rstudio",
