@@ -1,6 +1,10 @@
 import qrcode from 'qrcode-generator';
 
-const CATALOG_URL = 'https://soundtrackminus-hash.github.io/ios-install/catalog.json';
+const CATALOG_BASE = 'https://soundtrackminus-hash.github.io/ios-install/';
+const CATALOG_URLS = [
+  CATALOG_BASE + 'catalog.json',
+  CATALOG_BASE + 'catalog-other.json',
+];
 const CACHE_TTL = 60;
 const LINK_TTL = 600;   // 10 минут, потом токен исчезает сам
 const SLUG_RE = /^[a-z0-9-]{1,64}$/;
@@ -10,9 +14,18 @@ let catalogCache = { data: null, at: 0 };
 async function getCatalog() {
   const now = Date.now() / 1000;
   if (catalogCache.data && now - catalogCache.at < CACHE_TTL) return catalogCache.data;
-  const r = await fetch(CATALOG_URL, { cf: { cacheTtl: CACHE_TTL, cacheEverything: true } });
-  if (!r.ok) throw new Error('catalog fetch failed: ' + r.status);
-  const data = await r.json();
+  const parts = await Promise.all(CATALOG_URLS.map(async (u) => {
+    try {
+      const r = await fetch(u, { cf: { cacheTtl: CACHE_TTL, cacheEverything: true } });
+      if (!r.ok) return [];
+      const list = await r.json();
+      return Array.isArray(list) ? list : [];
+    } catch (e) {
+      return [];
+    }
+  }));
+  const data = [].concat(...parts);
+  if (!data.length) throw new Error('catalog unavailable');
   catalogCache = { data, at: now };
   return data;
 }
@@ -67,6 +80,11 @@ function esc(s) {
   return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
 }
 
+function absIcon(iconUrl) {
+  if (!iconUrl) return '';
+  return /^https?:\/\//.test(iconUrl) ? iconUrl : CATALOG_BASE + iconUrl;
+}
+
 function spentPage() {
   return page('Ссылка больше не работает',
     '<h1>Срок действия ссылки истёк.</h1>' +
@@ -80,7 +98,7 @@ function installPage(app) {
     '<h1>Установка</h1><div class="card"><b>' + esc(app.name) + '</b>' +
     '<div style="color:#6b7280;font-size:.85rem;margin:.3rem 0">v' + esc(app.version) + ' · ' + esc(app.sizeFormatted) + '</div>' +
     '<div style="display:flex;align-items:center;gap:1rem;margin:.8rem 0">' +
-    '<img src="' + esc(app.iconUrl) + '" alt="" style="width:64px;height:64px;border-radius:14px">' +
+    '<img src="' + esc(absIcon(app.iconUrl)) + '" alt="" style="width:64px;height:64px;border-radius:14px">' +
     '<div>Нажмите кнопку, чтобы начать установку прямо сейчас.</div></div>' +
     '<button onclick="location.href=\'' + itms + '\'">Установить сейчас</button>' +
     '<div class="hint">Ссылка действует 10 минут с момента получения, потом перестаёт открываться. ' +

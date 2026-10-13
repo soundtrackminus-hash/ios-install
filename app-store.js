@@ -163,7 +163,7 @@
   document.getElementById('search').addEventListener('input', render);
   document.getElementById('sort').addEventListener('change', render);
 
-  fetch('catalog.json').then(function (r) { return r.json(); }).then(function (list) {
+  fetch(window.CATALOG_URL || 'catalog.json').then(function (r) { return r.json(); }).then(function (list) {
     APPS = Array.isArray(list) ? list : [];
     render();
   }).catch(function () {

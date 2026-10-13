@@ -1,7 +1,10 @@
 # временное/служебное (генерируется конвейером)
 out/
 done.json
+done-other.json
 build.log
+build-other.log
+build-other.out
 minutes/
 *.ipa
 
