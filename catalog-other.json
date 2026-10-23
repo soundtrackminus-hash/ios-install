@@ -36,6 +36,18 @@
   "searchTags": "o_atoy"
  },
  {
+  "name": "Billfo",
+  "version": "1.159.21",
+  "slug": "o-billfo",
+  "bundleId": "ru.billfo.mobile",
+  "size": 115550498,
+  "sizeFormatted": "110.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-billfo/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-billfo-1.159.21/o-billfo.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-billfo.png",
+  "searchTags": "o_billfo"
+ },
+ {
   "name": "Calendar",
   "version": "2.3",
   "slug": "o-calendar",
@@ -228,6 +240,18 @@
   "searchTags": "o_yepy"
  },
  {
+  "name": "ZooDelivery",
+  "version": "1.1.0",
+  "slug": "o-zoodelivery",
+  "bundleId": "com.pecta.zoodelivery",
+  "size": 116656557,
+  "sizeFormatted": "111.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-zoodelivery/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-zoodelivery-1.1.0/o-zoodelivery.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-zoodelivery.png",
+  "searchTags": "o_zoodelivery"
+ },
+ {
   "name": "АО «МОСКОМБАНК»",
   "version": "5.7.0",
   "slug": "o-ao-moskombank",
@@ -310,6 +334,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-lesenta-1.1.1/o-lesenta.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-lesenta.png",
   "searchTags": "o_lesenta"
+ },
+ {
+  "name": "Лучше Онлайн",
+  "version": "1.0.0",
+  "slug": "o-luchshe-onlayn",
+  "bundleId": "com.vernerlohmus.luchshe",
+  "size": 234759169,
+  "sizeFormatted": "223.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-luchshe-onlayn/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-luchshe-onlayn-1.0.0/o-luchshe-onlayn.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-luchshe-onlayn.png",
+  "searchTags": "o_luchshe_onlayn"
  },
  {
   "name": "Любовь и гуси",
