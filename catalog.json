@@ -769,14 +769,26 @@
  },
  {
   "name": "VK",
-  "version": "8.107",
+  "version": "8.183.1",
   "slug": "vk",
+  "bundleId": "com.vk.vkclient",
+  "size": 437223900,
+  "sizeFormatted": "417.0 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/vk/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/vk-8.183.1/vk.ipa",
+  "iconUrl": "icons/vk.png",
+  "searchTags": "vk"
+ },
+ {
+  "name": "VK *old",
+  "version": "8.107",
+  "slug": "vk-8-107-old",
   "bundleId": "com.vk.vkclient",
   "size": 318962926,
   "sizeFormatted": "304.2 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/vk/manifest.plist",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/vk-8-107-old/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/vk-8.107/vk.ipa",
-  "iconUrl": "icons/vk.png",
+  "iconUrl": "icons/vk-8-107-old.png",
   "searchTags": "vk"
  },
  {
@@ -841,14 +853,26 @@
  },
  {
   "name": "Авито",
-  "version": "188.5",
+  "version": "200.5",
   "slug": "avito",
+  "bundleId": "ru.avito.app",
+  "size": 843682990,
+  "sizeFormatted": "804.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/avito/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/avito-200.5/avito.ipa",
+  "iconUrl": "icons/avito.png",
+  "searchTags": "avito"
+ },
+ {
+  "name": "Авито *old",
+  "version": "188.5",
+  "slug": "avito-188-5-old",
   "bundleId": "ru.avito.app",
   "size": 507683134,
   "sizeFormatted": "484.2 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/avito/manifest.plist",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/avito-188-5-old/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/avito-188.5/avito.ipa",
-  "iconUrl": "icons/avito.png",
+  "iconUrl": "icons/avito-188-5-old.png",
   "searchTags": "avito"
  },
  {
@@ -1069,14 +1093,26 @@
  },
  {
   "name": "Почта Mail.ru",
-  "version": "15.20.1",
+  "version": "15.92.0",
   "slug": "pochta-mail-ru",
+  "bundleId": "ru.mail.mail",
+  "size": 574547436,
+  "sizeFormatted": "547.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/pochta-mail-ru/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/pochta-mail-ru-15.92.0/pochta-mail-ru.ipa",
+  "iconUrl": "icons/pochta-mail-ru.png",
+  "searchTags": "pochta_mail_ru"
+ },
+ {
+  "name": "Почта Mail.ru *old",
+  "version": "15.20.1",
+  "slug": "pochta-mail-ru-15-20-1-old",
   "bundleId": "ru.mail.mail",
   "size": 262484238,
   "sizeFormatted": "250.3 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/pochta-mail-ru/manifest.plist",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/pochta-mail-ru-15-20-1-old/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/pochta-mail-ru-15.20.1/pochta-mail-ru.ipa",
-  "iconUrl": "icons/pochta-mail-ru.png",
+  "iconUrl": "icons/pochta-mail-ru-15-20-1-old.png",
   "searchTags": "pochta_mail_ru"
  },
  {
