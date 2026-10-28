@@ -504,6 +504,18 @@
   "searchTags": "ok"
  },
  {
+  "name": "Okko",
+  "version": "14.4.0",
+  "slug": "okko",
+  "bundleId": "ru.more.yotaplay",
+  "size": 325354385,
+  "sizeFormatted": "310.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/okko/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/okko-14.4.0/okko.ipa",
+  "iconUrl": "icons/okko.png",
+  "searchTags": "okko"
+ },
+ {
   "name": "Online",
   "version": "17.6.1",
   "slug": "online",
