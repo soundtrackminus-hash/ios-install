@@ -15,7 +15,7 @@ import zipfile
 from pathlib import Path
 
 REPO = "soundtrackminus-hash/ios-install"
-DRIVE_FOLDER = "1eMqsKgtbKsGgSP2_avqc5RC4voSs0nsz"
+IPA_DIR = Path("/srv/storage/ipa/selimseidov@gmail.com")  # 本地 IPA 源目录
 BASE = Path("/root/projects/ios-install")
 OUT = BASE / "out"                # временные загрузки
 DONE = BASE / "done.json"         # словарь slug -> {fileId, sha256, size}
@@ -24,10 +24,6 @@ MAX_ASSET = 2_000_000_000   # лимит одного ассета в GitHub Rel
 TMPIPA = "/root/.cache/ipa_work"  # НЕ /tmp: там tmpfs 962 МБ, крупные IPA не влезают
 
 import requests
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
 
 TR = {
     "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e",
@@ -60,30 +56,24 @@ def slugify(name):
     return s or "app"
 
 
-def drive(c):
-    d = build("drive", "v3", credentials=c, static_discovery=False)
-    files = d.files().list(
-        q="'%s' in parents and trashed=false" % DRIVE_FOLDER,
-        fields="files(id,name,size)", pageSize=200).execute().get("files", [])
-    return d, files
+def get_ipa_files():
+    """从本地目录获取所有 IPA 文件列表"""
+    if not IPA_DIR.exists():
+        raise RuntimeError(f"IPA 目录不存在: {IPA_DIR}")
+    files = []
+    for f in sorted(IPA_DIR.glob("*.ipa")):
+        files.append({
+            "id": str(f),   # 用完整路径作为唯一标识
+            "name": f.name,
+            "size": f.stat().st_size
+        })
+    return files
 
 
-def download(d, file_id, dest):
-    media = d.files().get_media(fileId=file_id)
-    with open(dest, "wb") as fh:
-        dl = MediaIoBaseDownload(fh, media, chunksize=4 * 1024 * 1024)
-        prev = 0
-        t0 = time.time()
-        while True:
-            status, done = dl.next_chunk()
-            if status and status.progress() and status.progress() > prev + 0.05:
-                prev = status.progress()
-                mb = os.path.getsize(dest) / 1048576
-                spd = mb / (time.time() - t0)
-                print("    загружено %.1f МБ, %.1f МБ/с" % (mb, spd), flush=True)
-            if done:
-                break
-    return os.path.getsize(dest)
+def copy_ipa(src_path, dest_path):
+    """复制 IPA 文件到临时目录"""
+    shutil.copy2(str(src_path), dest_path)
+    return os.path.getsize(dest_path)
 
 
 def ipa_info(ipa_path):
@@ -183,7 +173,7 @@ def verify_asset(url, expected_size, wait=300):
 
 
 def ensure_release(slug, ver):
-    tag = "%s-%s" % (slug, ver.replace(".", "."))
+    tag = "%s-%s" % (slug, ver)
     try:
         gh("release", "view", tag, "--repo", REPO, "--json", "name")
         return tag, True
@@ -195,13 +185,10 @@ def ensure_release(slug, ver):
 
 def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None
-    creds = Credentials.from_authorized_user_file("/root/.hermes/google_token.json")
-    creds.refresh(Request())
-    d, files = drive(creds)
+    files = get_ipa_files()
     if only:
         files = [f for f in files if only.lower() in f["name"].lower()]
-    files = sorted(files, key=lambda f: f["name"])
-    log("файлов в Drive-папке Site: %d" % len(files))
+    log("IPA 文件数: %d (来自 %s)" % (len(files), IPA_DIR))
     os.makedirs(TMPIPA, exist_ok=True)
     done = {}
     if DONE.exists():
@@ -245,11 +232,12 @@ def main():
             log("skip %s (%d МБ) — больше лимита ассета в 2 ГБ"
                 % (name, expect // 1048576))
             continue
-        ipa = os.path.join(TMPIPA, "%s.ipa" % fid)
+        src_ipa = Path(fid)   # 原始路径如 /srv/storage/ipa/selimseidov@.../xxx.ipa
+        ipa = os.path.join(TMPIPA, "%s.ipa" % fid[-20:])  # 取最后一段作缓存名
         cur = ipa
         log("=== %s (%d МБ) ===" % (name, expect // 1048576))
         try:
-            got = download(d, fid, ipa)
+            got = copy_ipa(src_ipa, ipa)
             if got != expect:
                 raise RuntimeError("размер не сошёлся: %d != %d" % (got, expect))
             n, v, bundle, _ = ipa_info(ipa)

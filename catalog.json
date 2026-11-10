@@ -432,6 +432,18 @@
   "searchTags": "max"
  },
  {
+  "name": "MobileCheck",
+  "version": "3.18.4",
+  "slug": "mobilecheck",
+  "bundleId": "com.mobilecheck.survey",
+  "size": 231070108,
+  "sizeFormatted": "220.4 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/mobilecheck/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/mobilecheck-3.18.4/mobilecheck.ipa",
+  "iconUrl": "icons/mobilecheck.png",
+  "searchTags": "mobilecheck"
+ },
+ {
   "name": "Most Wanted",
   "version": "1.1.3",
   "slug": "most-wanted",
@@ -528,6 +540,18 @@
   "searchTags": "online"
  },
  {
+  "name": "PatrolKit",
+  "version": "234.0",
+  "slug": "patrolkit",
+  "bundleId": "ru.patrolkit",
+  "size": 472815117,
+  "sizeFormatted": "450.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/patrolkit/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/patrolkit-234.0/patrolkit.ipa",
+  "iconUrl": "icons/patrolkit.png",
+  "searchTags": "patrolkit"
+ },
+ {
   "name": "PerryGame",
   "version": "1.7.7",
   "slug": "perrygame",
@@ -586,6 +610,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/relaxia-2.6/relaxia.ipa",
   "iconUrl": "icons/relaxia.png",
   "searchTags": "relaxia"
+ },
+ {
+  "name": "Room Assist",
+  "version": "1.0.2",
+  "slug": "room-assist",
+  "bundleId": "online.roomtop.householdings",
+  "size": 155886582,
+  "sizeFormatted": "148.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/room-assist/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/room-assist-1.0.2/room-assist.ipa",
+  "iconUrl": "icons/room-assist.png",
+  "searchTags": "room_assist"
  },
  {
   "name": "RStudio",
@@ -756,6 +792,18 @@
   "searchTags": "texas_poker_holdem"
  },
  {
+  "name": "Tropa",
+  "version": "1.3",
+  "slug": "tropa",
+  "bundleId": "com.oxidian.tropa",
+  "size": 294518643,
+  "sizeFormatted": "280.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/tropa/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/tropa-1.3/tropa.ipa",
+  "iconUrl": "icons/tropa.png",
+  "searchTags": "tropa"
+ },
+ {
   "name": "v2RayTun",
   "version": "2.4.7",
   "slug": "v2raytun",
@@ -789,18 +837,6 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/vk/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/vk-8.183.1/vk.ipa",
   "iconUrl": "icons/vk.png",
-  "searchTags": "vk"
- },
- {
-  "name": "VK *old",
-  "version": "8.107",
-  "slug": "vk-8-107-old",
-  "bundleId": "com.vk.vkclient",
-  "size": 318962926,
-  "sizeFormatted": "304.2 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/vk-8-107-old/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/vk-8.107/vk.ipa",
-  "iconUrl": "icons/vk-8-107-old.png",
   "searchTags": "vk"
  },
  {
@@ -864,6 +900,30 @@
   "searchTags": "world_of_goo"
  },
  {
+  "name": "Yaqin",
+  "version": "1.3.0",
+  "slug": "yaqin",
+  "bundleId": "uz.yaqin.app",
+  "size": 71053429,
+  "sizeFormatted": "67.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/yaqin/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/yaqin-1.3.0/yaqin.ipa",
+  "iconUrl": "icons/yaqin.png",
+  "searchTags": "yaqin"
+ },
+ {
+  "name": "ZooDelivery",
+  "version": "1.1.0",
+  "slug": "zoodelivery",
+  "bundleId": "com.pecta.zoodelivery",
+  "size": 116656492,
+  "sizeFormatted": "111.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/zoodelivery/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/zoodelivery-1.1.0/zoodelivery.ipa",
+  "iconUrl": "icons/zoodelivery.png",
+  "searchTags": "zoodelivery"
+ },
+ {
   "name": "Авито",
   "version": "200.5",
   "slug": "avito",
@@ -873,18 +933,6 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/avito/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/avito-200.5/avito.ipa",
   "iconUrl": "icons/avito.png",
-  "searchTags": "avito"
- },
- {
-  "name": "Авито *old",
-  "version": "188.5",
-  "slug": "avito-188-5-old",
-  "bundleId": "ru.avito.app",
-  "size": 507683134,
-  "sizeFormatted": "484.2 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/avito-188-5-old/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/avito-188.5/avito.ipa",
-  "iconUrl": "icons/avito-188-5-old.png",
   "searchTags": "avito"
  },
  {
@@ -1068,6 +1116,18 @@
   "searchTags": "luna"
  },
  {
+  "name": "Лучше Онлайн",
+  "version": "1.0.0",
+  "slug": "luchshe-onlayn",
+  "bundleId": "com.vernerlohmus.luchshe",
+  "size": 234759138,
+  "sizeFormatted": "223.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/luchshe-onlayn/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/luchshe-onlayn-1.0.0/luchshe-onlayn.ipa",
+  "iconUrl": "icons/luchshe-onlayn.png",
+  "searchTags": "luchshe_onlayn"
+ },
+ {
   "name": "Любовь и гуси",
   "version": "2026.09.20",
   "slug": "lyubov-i-gusi",
@@ -1116,18 +1176,6 @@
   "searchTags": "pochta_mail_ru"
  },
  {
-  "name": "Почта Mail.ru *old",
-  "version": "15.20.1",
-  "slug": "pochta-mail-ru-15-20-1-old",
-  "bundleId": "ru.mail.mail",
-  "size": 262484238,
-  "sizeFormatted": "250.3 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/pochta-mail-ru-15-20-1-old/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/pochta-mail-ru-15.20.1/pochta-mail-ru.ipa",
-  "iconUrl": "icons/pochta-mail-ru-15-20-1-old.png",
-  "searchTags": "pochta_mail_ru"
- },
- {
   "name": "Сириус",
   "version": "2.0.1",
   "slug": "sirius",
@@ -1152,6 +1200,18 @@
   "searchTags": "siyanie"
  },
  {
+  "name": "Стрелка Поехали",
+  "version": "26.9.18",
+  "slug": "strelka-poekhali",
+  "bundleId": "ru.mosreg.StrelkaMO",
+  "size": 83154963,
+  "sizeFormatted": "79.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/strelka-poekhali/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/strelka-poekhali-26.9.18/strelka-poekhali.ipa",
+  "iconUrl": "icons/strelka-poekhali.png",
+  "searchTags": "strelka_poekhali"
+ },
+ {
   "name": "Тинькофф",
   "version": "6.13.5",
   "slug": "tinkoff",
@@ -1166,18 +1226,6 @@
  {
   "name": "Учим слова",
   "version": "1.02",
-  "slug": "uchim-slova-main",
-  "bundleId": "st.learner.main",
-  "size": 285945630,
-  "sizeFormatted": "272.7 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/uchim-slova-main/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/uchim-slova-main-1.02/uchim-slova-main.ipa",
-  "iconUrl": "icons/uchim-slova-main.png",
-  "searchTags": "uchim_slova_main"
- },
- {
-  "name": "Учим слова",
-  "version": "1.02",
   "slug": "uchim-slova",
   "bundleId": "st.learner.main",
   "size": 285945630,
@@ -1188,16 +1236,16 @@
   "searchTags": "uchim_slova"
  },
  {
-  "name": "ЮMoney",
-  "version": "11.12.0",
-  "slug": "yumoney-oney",
-  "bundleId": "ru.yoo.money",
-  "size": 234978412,
-  "sizeFormatted": "224.1 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/yumoney-oney/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/yumoney-oney-11.12.0/yumoney-oney.ipa",
-  "iconUrl": "icons/yumoney-oney.png",
-  "searchTags": "yumoney_oney"
+  "name": "Учим слова",
+  "version": "1.02",
+  "slug": "uchim-slova-main",
+  "bundleId": "st.learner.main",
+  "size": 285945630,
+  "sizeFormatted": "272.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/uchim-slova-main/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/uchim-slova-main-1.02/uchim-slova-main.ipa",
+  "iconUrl": "icons/uchim-slova-main.png",
+  "searchTags": "uchim_slova_main"
  },
  {
   "name": "ЮMoney",
@@ -1210,6 +1258,18 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/yumoney-11.12.0/yumoney.ipa",
   "iconUrl": "icons/yumoney.png",
   "searchTags": "yumoney"
+ },
+ {
+  "name": "ЮMoney",
+  "version": "11.12.0",
+  "slug": "yumoney-oney",
+  "bundleId": "ru.yoo.money",
+  "size": 234978412,
+  "sizeFormatted": "224.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/yumoney-oney/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/yumoney-oney-11.12.0/yumoney-oney.ipa",
+  "iconUrl": "icons/yumoney-oney.png",
+  "searchTags": "yumoney_oney"
  },
  {
   "name": "Юла",
