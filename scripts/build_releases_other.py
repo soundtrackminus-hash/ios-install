@@ -2,7 +2,6 @@
 """Скачивает IPA из Drive-папки аккаунта a9953303193 (слот other), создаёт релизы в
 soundtrackminus-hash/ios-install, генерирует манифесты/иконки, собирает catalog-other.json.
 Слаги получают префикс 'o-', чтобы не столкнуться с основным каталогом. По одному файлу, с резюмом."""
-import io
 import json
 import os
 import plistlib
@@ -10,13 +9,12 @@ import re
 import shutil
 import subprocess
 import sys
-import tempfile
 import time
 import zipfile
 from pathlib import Path
 
 REPO = "soundtrackminus-hash/ios-install"
-DRIVE_FOLDER = "1DYoK-BJlKSn2tUTC6DWXhgualZG-mZCp"  # папка a9953303193@gmail.com
+IPA_DIR = Path("/srv/storage/ipa/a9953303193@gmail.com")  # локальный источник IPA
 BASE = Path("/root/projects/ios-install")
 OUT = BASE / "out"                # временные загрузки
 DONE = BASE / "done-other.json"   # словарь fileId -> {slug, entry, ...}
@@ -24,13 +22,8 @@ LOG = BASE / "build-other.log"
 CATALOG = BASE / "catalog-other.json"
 SLUG_PREFIX = "o-"                # чтобы не пересекаться с основным каталогом
 MAX_ASSET = 2_000_000_000   # лимит одного ассета в GitHub Releases
-TMPIPA = "/root/.cache/ipa_work"  # НЕ /tmp: там tmpfs 962 МБ, крупные IPA не влезают
 
 import requests
-from google.auth.transport.requests import Request
-from google.oauth2.credentials import Credentials
-from googleapiclient.discovery import build
-from googleapiclient.http import MediaIoBaseDownload
 
 TR = {
     "а": "a", "б": "b", "в": "v", "г": "g", "д": "d", "е": "e",
@@ -61,32 +54,6 @@ def slugify(name):
     s = re.sub(r"[^a-z0-9]+", "-", s)
     s = re.sub(r"-{2,}", "-", s).strip("-")
     return s or "app"
-
-
-def drive(c):
-    d = build("drive", "v3", credentials=c, static_discovery=False)
-    files = d.files().list(
-        q="'%s' in parents and trashed=false" % DRIVE_FOLDER,
-        fields="files(id,name,size)", pageSize=200).execute().get("files", [])
-    return d, files
-
-
-def download(d, file_id, dest):
-    media = d.files().get_media(fileId=file_id)
-    with open(dest, "wb") as fh:
-        dl = MediaIoBaseDownload(fh, media, chunksize=4 * 1024 * 1024)
-        prev = 0
-        t0 = time.time()
-        while True:
-            status, done = dl.next_chunk()
-            if status and status.progress() and status.progress() > prev + 0.05:
-                prev = status.progress()
-                mb = os.path.getsize(dest) / 1048576
-                spd = mb / (time.time() - t0)
-                print("    загружено %.1f МБ, %.1f МБ/с" % (mb, spd), flush=True)
-            if done:
-                break
-    return os.path.getsize(dest)
 
 
 def ipa_info(ipa_path):
@@ -214,14 +181,19 @@ def ensure_release(slug, ver):
 
 def main():
     only = sys.argv[1] if len(sys.argv) > 1 else None
-    creds = Credentials.from_authorized_user_file("/root/.hermes/google_token.json")
-    creds.refresh(Request())
-    d, files = drive(creds)
+    if not IPA_DIR.exists():
+        raise RuntimeError("IPA-каталог не существует: %s" % IPA_DIR)
+    files = []
+    for f in sorted(IPA_DIR.glob("*.ipa")):
+        files.append({
+            "id": str(f),
+            "name": f.name,
+            "size": f.stat().st_size
+        })
     if only:
         files = [f for f in files if only.lower() in f["name"].lower()]
     files = sorted(files, key=lambda f: f["name"])
-    log("файлов в Drive-папке Site: %d" % len(files))
-    os.makedirs(TMPIPA, exist_ok=True)
+    log("файлов в локальной папке: %d" % len(files))
     done = {}
     if DONE.exists():
         done = json.loads(DONE.read_text())
@@ -244,7 +216,7 @@ def main():
     for fi in files:
         name = fi["name"]
         fid = fi["id"]
-        expect = int(fi["size"])
+        expect = fi["size"]
         if fid in done and done[fid].get("status") == "ok":
             log("skip %s (%s уже готов)" % (name, done[fid].get("slug")))
             prev = done[fid].get("entry")
@@ -254,21 +226,20 @@ def main():
                 log("  ВНИМАНИЕ: у %s нет сохранённого entry, каталог будет неполным" % name)
             continue
         # Дубль перезаливки: такое приложение уже размещено на сайте.
-        # Проверяем ДО скачивания, чтобы не тянуть гигабайты впустую.
+        # Проверяем ДО downloads, чтобы не тянуть гигабайты впустую.
         if slugify(Path(name).stem) in placed:
             log("skip %s (дубль: такое уже размещено)" % name)
             continue
         # Ассет в GitHub Releases ограничен 2 ГБ — крупнее не загрузить,
         # поэтому не тратим на них время и место.
         if expect > MAX_ASSET:
-            log("skip %s (%d МБ) — больше лимита ассета в 2 ГБ"
-                % (name, expect // 1048576))
+            log("skip %s (%d МБ) — больше лимита ассета в 2 ГБ" % (name, expect // 1048576))
             continue
-        ipa = os.path.join(TMPIPA, "%s.ipa" % fid)
+        ipa = Path(fid)  # локальный путь к IPA, используем напрямую
         cur = ipa
         log("=== %s (%d МБ) ===" % (name, expect // 1048576))
         try:
-            got = download(d, fid, ipa)
+            got = ipa.stat().st_size
             if got != expect:
                 raise RuntimeError("размер не сошёлся: %d != %d" % (got, expect))
             n, v, bundle, _ = ipa_info(ipa)
@@ -281,10 +252,6 @@ def main():
                 slug = "%s-%s" % (base, tail) if tail else "%s-x%s" % (base, fid[-4:])
             tag, existed = ensure_release(slug, v)
             asset_name = "%s.ipa" % slug
-            upload_path = os.path.join(TMPIPA, asset_name)
-            if os.path.abspath(upload_path) != os.path.abspath(ipa):
-                os.replace(ipa, upload_path)
-                cur = upload_path
             ipa_url = "https://github.com/%s/releases/download/%s/%s" % (REPO, tag, asset_name)
             if existed:
                 ok, ct = verify_asset(ipa_url, expect, wait=30)
@@ -295,14 +262,14 @@ def main():
             else:
                 ok, ct = False, "?"
             if not ok:
-                gh("release", "upload", tag, cur,
+                gh("release", "upload", tag, str(ipa),
                    "--repo", REPO, "--clobber")
                 ok, ct = asset_uploaded(tag, asset_name), "application/octet-stream"
             if not ok:
                 raise RuntimeError("ассет не появился на GitHub")
             title = n
             make_manifest(slug, v, bundle, title, ipa_url, expect)
-            iconf = extract_icon(cur, None, slug)
+            iconf = extract_icon(str(ipa), None, slug)
             entry = {
                 "name": title, "version": v, "slug": slug,
                 "bundleId": bundle, "size": expect,
@@ -322,9 +289,7 @@ def main():
             DONE.write_text(json.dumps(done, ensure_ascii=False, indent=1))
             log("FAIL %s : %s" % (name, e))
         finally:
-            for p_ in (cur, ipa):
-                if p_ and os.path.exists(p_):
-                    os.unlink(p_)
+            pass  # не удаляем исходные IPA из локальной папки
 
     catalog.sort(key=lambda e: e["name"].lower())
     CATALOG.write_text(
