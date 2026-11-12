@@ -97,9 +97,6 @@
     span.style.textAlign = 'center';
     span.style.padding = '1rem';
     span.style.whiteSpace = 'nowrap';
-    span.style.overflow = 'hidden';
-    span.style.textOverflow = 'ellipsis';
-    span.style.maxWidth = '100%';
     span.textContent = text;
     popupContent.appendChild(span);
     popup.classList.add('active');
@@ -115,6 +112,13 @@
     else if (len > 20) fontSize = 2.0;
     else if (len > 15) fontSize = 2.4;
     span.style.fontSize = fontSize + 'rem';
+  // Add click handlers for the two info-line elements
+  document.querySelectorAll('.info-line').forEach(el => {
+    el.addEventListener('click', () => {
+      const text = el.textContent.trim();
+      showPopup(text);
+    });
+  });
   }
 
   // Close on click outside
