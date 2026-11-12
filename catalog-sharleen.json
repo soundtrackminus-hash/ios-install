@@ -16,7 +16,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-calendar.png",
    "searchTags": "sharleen_calendar"
   },
-  "name": "Calendar"
+  "name": "Calendar",
+  "description": "Рамблер почта и Сбер диск"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6448322800.ipa",
@@ -35,7 +36,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zdorove.png",
    "searchTags": "sharleen_zdorove"
   },
-  "name": "Здоровье"
+  "name": "Здоровье",
+  "description": "СОГАЗ"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6450411829.ipa",
@@ -54,7 +56,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-atoy.png",
    "searchTags": "sharleen_atoy"
   },
-  "name": "ATOY"
+  "name": "ATOY",
+  "description": "Йота"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6476965022.ipa",
@@ -73,7 +76,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-mobilecheck.png",
    "searchTags": "sharleen_mobilecheck"
   },
-  "name": "MobileCheck"
+  "name": "MobileCheck",
+  "description": "Совкомбанк Бизнес"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6756371742.ipa",
@@ -111,7 +115,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-billfo.png",
    "searchTags": "sharleen_billfo"
   },
-  "name": "Billfo"
+  "name": "Billfo",
+  "description": "Газпром инвестиции"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6762205316.ipa",
@@ -130,7 +135,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-yandeks-sim.png",
    "searchTags": "sharleen_yandeks_sim"
   },
-  "name": "Яндекс Сим"
+  "name": "Яндекс Сим",
+  "description": "Яндекс Сим"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6766530710.ipa",
@@ -149,7 +155,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-slicingdices.png",
    "searchTags": "sharleen_slicingdices"
   },
-  "name": "SlicingDices"
+  "name": "SlicingDices",
+  "description": "РуТюб"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6769063290.ipa",
@@ -168,7 +175,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-patrolkit.png",
    "searchTags": "sharleen_patrolkit"
   },
-  "name": "PatrolKit"
+  "name": "PatrolKit",
+  "description": "PatrolKit"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6775435476.ipa",
@@ -187,7 +195,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-getquot.png",
    "searchTags": "sharleen_getquot"
   },
-  "name": "GetQuot"
+  "name": "GetQuot",
+  "description": "ВТБ инвестиции старое"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6796619816.ipa",
@@ -225,7 +234,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-room-assist.png",
    "searchTags": "sharleen_room_assist"
   },
-  "name": "Room Assist"
+  "name": "Room Assist",
+  "description": "Дом рф"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6801144026.ipa",
@@ -244,7 +254,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-rstudio.png",
    "searchTags": "sharleen_rstudio"
   },
-  "name": "RStudio"
+  "name": "RStudio",
+  "description": "РуТюб студио"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6802238031.ipa",
@@ -263,7 +274,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zoodelivery.png",
    "searchTags": "sharleen_zoodelivery"
   },
-  "name": "ZooDelivery"
+  "name": "ZooDelivery",
+  "description": "ZooDelivery"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6803519628.ipa",
@@ -282,7 +294,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-kafario.png",
    "searchTags": "sharleen_kafario"
   },
-  "name": "Kafario"
+  "name": "Kafario",
+  "description": "ВТБ инвестиции"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6804635291.ipa",
@@ -301,7 +314,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-strelka-poekhali.png",
    "searchTags": "sharleen_strelka_poekhali"
   },
-  "name": "Стрелка Поехали"
+  "name": "Стрелка Поехали",
+  "description": "Стрелка Поехали"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6805045741.ipa",
@@ -320,7 +334,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-tropa.png",
    "searchTags": "sharleen_tropa"
   },
-  "name": "Tropa"
+  "name": "Tropa",
+  "description": "ВК музыка"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6812428354.ipa",
@@ -339,7 +354,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-yaqin.png",
    "searchTags": "sharleen_yaqin"
   },
-  "name": "Yaqin"
+  "name": "Yaqin",
+  "description": "Макс, Max"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6816046522.ipa",
@@ -358,7 +374,8 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-luchshe-onlayn.png",
    "searchTags": "sharleen_luchshe_onlayn"
   },
-  "name": "Лучше Онлайн"
+  "name": "Лучше Онлайн",
+  "description": "Лучше Онлайн"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/771700826.ipa",
@@ -377,6 +394,7 @@
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-pochta-rossii.png",
    "searchTags": "sharleen_pochta_rossii"
   },
-  "name": "Почта России"
+  "name": "Почта России",
+  "description": "Почта России"
  }
 ]
