@@ -174,10 +174,11 @@
    "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-patrolkit/manifest.plist",
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-patrolkit-234.0/6769063290.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-patrolkit.png",
-   "searchTags": "sharleen_patrolkit"
+   "searchTags": "sharleen_patrolkit",
+   "description": "Авито"
   },
   "name": "PatrolKit",
-  "description": "PatrolKit"
+  "description": "Авито"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6775435476.ipa",
@@ -274,10 +275,11 @@
    "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-zoodelivery/manifest.plist",
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-zoodelivery-1.1.0/6802238031.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zoodelivery.png",
-   "searchTags": "sharleen_zoodelivery"
+   "searchTags": "sharleen_zoodelivery",
+   "description": "Premier кинотеатр"
   },
   "name": "ZooDelivery",
-  "description": "ZooDelivery"
+  "description": "Premier кинотеатр"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6803519628.ipa",
@@ -374,10 +376,11 @@
    "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-luchshe-onlayn/manifest.plist",
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-luchshe-onlayn-1.0.0/6816046522.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-luchshe-onlayn.png",
-   "searchTags": "sharleen_luchshe_onlayn"
+   "searchTags": "sharleen_luchshe_onlayn",
+   "description": "Лента"
   },
   "name": "Лучше Онлайн",
-  "description": "Лучше Онлайн"
+  "description": "Лента"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/771700826.ipa",
