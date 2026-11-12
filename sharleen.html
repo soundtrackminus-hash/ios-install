@@ -49,9 +49,9 @@
 <header class="header">
   <h1>Установка приложений на iPhone</h1>
   <p class="header__note">Выберите приложение. Нажмите «Скачать» — установка начнётся после подтверждения в Настройках.</p>
-  <div class="header__info" onclick="togglePopup()">
-    <span class="info-line">sharleenbarnts70584@hotmail.com</span>
-    <span class="info-line">Aa156321!</span>
+  <div class="header__info">
+    <span class="info-line" onclick="showPopup('sharleenbarnts70584@hotmail.com')">sharleenbarnts70584@hotmail.com</span>
+    <span class="info-line" onclick="showPopup('Aa156321!')">Aa156321!</span>
   </div>
 </header>
 
@@ -82,19 +82,20 @@
 </div>
 
 <script>
-  const infoLines = document.querySelectorAll('.info-line');
   const popup = document.getElementById('popup-overlay');
   const popupContent = document.getElementById('popup-content');
 
-  function togglePopup() {
-    if (popup.classList.contains('active')) {
-      popup.classList.remove('active');
-    } else {
-      popup.classList.add('active');
-      popupContent.textContent = '';
-      // Combine text from both lines
-      popupContent.textContent = infoLines[0].textContent + '\n' + infoLines[1].textContent;
-    }
+  function showPopup(text) {
+    popupContent.innerHTML = '';
+    const span = document.createElement('div');
+    span.style.color = '#000';
+    span.style.fontSize = '3rem';
+    span.style.fontWeight = 'bold';
+    span.style.textAlign = 'center';
+    span.style.padding = '1rem';
+    span.textContent = text;
+    popupContent.appendChild(span);
+    popup.classList.add('active');
   }
 
   // Close on click outside
