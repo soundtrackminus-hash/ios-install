@@ -3,7 +3,6 @@
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/1108185179.ipa",
   "status": "ok",
   "size": 7737146,
-  "name": "1108185179.ipa",
   "slug": "sharleen-calendar",
   "entry": {
    "name": "Calendar",
@@ -16,13 +15,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-calendar-2.6/1108185179.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-calendar.png",
    "searchTags": "sharleen_calendar"
-  }
+  },
+  "name": "Calendar"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6448322800.ipa",
   "status": "ok",
   "size": 99046090,
-  "name": "6448322800.ipa",
   "slug": "sharleen-zdorove",
   "entry": {
    "name": "Здоровье",
@@ -35,13 +34,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-zdorove-3.13.2/6448322800.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zdorove.png",
    "searchTags": "sharleen_zdorove"
-  }
+  },
+  "name": "Здоровье"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6450411829.ipa",
   "status": "ok",
   "size": 94984022,
-  "name": "6450411829.ipa",
   "slug": "sharleen-atoy",
   "entry": {
    "name": "ATOY",
@@ -54,13 +53,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-atoy-13.95/6450411829.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-atoy.png",
    "searchTags": "sharleen_atoy"
-  }
+  },
+  "name": "ATOY"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6476965022.ipa",
   "status": "ok",
   "size": 231070114,
-  "name": "6476965022.ipa",
   "slug": "sharleen-mobilecheck",
   "entry": {
    "name": "MobileCheck",
@@ -73,13 +72,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-mobilecheck-3.18.4/6476965022.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-mobilecheck.png",
    "searchTags": "sharleen_mobilecheck"
-  }
+  },
+  "name": "MobileCheck"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6756371742.ipa",
   "status": "ok",
   "size": 108158570,
-  "name": "6756371742.ipa",
   "slug": "sharleen-bak-bonus",
   "entry": {
    "name": "Бак+Бонус",
@@ -92,13 +91,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-bak-bonus-1.1.1/6756371742.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-bak-bonus.png",
    "searchTags": "sharleen_bak_bonus"
-  }
+  },
+  "name": "Бак+Бонус"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6759976509.ipa",
   "status": "ok",
   "size": 115550454,
-  "name": "6759976509.ipa",
   "slug": "sharleen-billfo",
   "entry": {
    "name": "Billfo",
@@ -111,13 +110,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-billfo-1.159.21/6759976509.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-billfo.png",
    "searchTags": "sharleen_billfo"
-  }
+  },
+  "name": "Billfo"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6762205316.ipa",
   "status": "ok",
   "size": 47339163,
-  "name": "6762205316.ipa",
   "slug": "sharleen-yandeks-sim",
   "entry": {
    "name": "Яндекс Сим",
@@ -130,13 +129,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-yandeks-sim-1.8.0/6762205316.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-yandeks-sim.png",
    "searchTags": "sharleen_yandeks_sim"
-  }
+  },
+  "name": "Яндекс Сим"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6766530710.ipa",
   "status": "ok",
   "size": 58663410,
-  "name": "6766530710.ipa",
   "slug": "sharleen-slicingdices",
   "entry": {
    "name": "SlicingDices",
@@ -149,13 +148,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-slicingdices-1.3.0/6766530710.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-slicingdices.png",
    "searchTags": "sharleen_slicingdices"
-  }
+  },
+  "name": "SlicingDices"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6769063290.ipa",
   "status": "ok",
   "size": 472815122,
-  "name": "6769063290.ipa",
   "slug": "sharleen-patrolkit",
   "entry": {
    "name": "PatrolKit",
@@ -168,13 +167,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-patrolkit-234.0/6769063290.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-patrolkit.png",
    "searchTags": "sharleen_patrolkit"
-  }
+  },
+  "name": "PatrolKit"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6775435476.ipa",
   "status": "ok",
   "size": 141476499,
-  "name": "6775435476.ipa",
   "slug": "sharleen-getquot",
   "entry": {
    "name": "GetQuot",
@@ -187,13 +186,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-getquot-2.0.0/6775435476.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-getquot.png",
    "searchTags": "sharleen_getquot"
-  }
+  },
+  "name": "GetQuot"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6796619816.ipa",
   "status": "ok",
   "size": 109259404,
-  "name": "6796619816.ipa",
   "slug": "sharleen-alrosa-air-company",
   "entry": {
    "name": "ALROSA Air Company",
@@ -206,13 +205,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-alrosa-air-company-2.1.40/6796619816.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-alrosa-air-company.png",
    "searchTags": "sharleen_alrosa_air_company"
-  }
+  },
+  "name": "ALROSA Air Company"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6798219417.ipa",
   "status": "ok",
   "size": 155886590,
-  "name": "6798219417.ipa",
   "slug": "sharleen-room-assist",
   "entry": {
    "name": "Room Assist",
@@ -225,13 +224,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-room-assist-1.0.2/6798219417.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-room-assist.png",
    "searchTags": "sharleen_room_assist"
-  }
+  },
+  "name": "Room Assist"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6801144026.ipa",
   "status": "ok",
   "size": 45844625,
-  "name": "6801144026.ipa",
   "slug": "sharleen-rstudio",
   "entry": {
    "name": "RStudio",
@@ -244,13 +243,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-rstudio-1.1.0/6801144026.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-rstudio.png",
    "searchTags": "sharleen_rstudio"
-  }
+  },
+  "name": "RStudio"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6802238031.ipa",
   "status": "ok",
   "size": 116656499,
-  "name": "6802238031.ipa",
   "slug": "sharleen-zoodelivery",
   "entry": {
    "name": "ZooDelivery",
@@ -263,13 +262,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-zoodelivery-1.1.0/6802238031.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zoodelivery.png",
    "searchTags": "sharleen_zoodelivery"
-  }
+  },
+  "name": "ZooDelivery"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6803519628.ipa",
   "status": "ok",
   "size": 38575581,
-  "name": "6803519628.ipa",
   "slug": "sharleen-kafario",
   "entry": {
    "name": "Kafario",
@@ -282,13 +281,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-kafario-2.1.0/6803519628.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-kafario.png",
    "searchTags": "sharleen_kafario"
-  }
+  },
+  "name": "Kafario"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6804635291.ipa",
   "status": "ok",
   "size": 83154974,
-  "name": "6804635291.ipa",
   "slug": "sharleen-strelka-poekhali",
   "entry": {
    "name": "Стрелка Поехали",
@@ -301,13 +300,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-strelka-poekhali-26.9.18/6804635291.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-strelka-poekhali.png",
    "searchTags": "sharleen_strelka_poekhali"
-  }
+  },
+  "name": "Стрелка Поехали"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6805045741.ipa",
   "status": "ok",
   "size": 294518648,
-  "name": "6805045741.ipa",
   "slug": "sharleen-tropa",
   "entry": {
    "name": "Tropa",
@@ -320,13 +319,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-tropa-1.3/6805045741.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-tropa.png",
    "searchTags": "sharleen_tropa"
-  }
+  },
+  "name": "Tropa"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6812428354.ipa",
   "status": "ok",
   "size": 71053438,
-  "name": "6812428354.ipa",
   "slug": "sharleen-yaqin",
   "entry": {
    "name": "Yaqin",
@@ -339,13 +338,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-yaqin-1.3.0/6812428354.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-yaqin.png",
    "searchTags": "sharleen_yaqin"
-  }
+  },
+  "name": "Yaqin"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6816046522.ipa",
   "status": "ok",
   "size": 234759140,
-  "name": "6816046522.ipa",
   "slug": "sharleen-luchshe-onlayn",
   "entry": {
    "name": "Лучше Онлайн",
@@ -358,13 +357,13 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-luchshe-onlayn-1.0.0/6816046522.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-luchshe-onlayn.png",
    "searchTags": "sharleen_luchshe_onlayn"
-  }
+  },
+  "name": "Лучше Онлайн"
  },
  {
   "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/771700826.ipa",
   "status": "ok",
   "size": 247915409,
-  "name": "771700826.ipa",
   "slug": "sharleen-pochta-rossii",
   "entry": {
    "name": "Почта России",
@@ -377,6 +376,7 @@
    "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-pochta-rossii-7.8.6/771700826.ipa",
    "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-pochta-rossii.png",
    "searchTags": "sharleen_pochta_rossii"
-  }
+  },
+  "name": "Почта России"
  }
 ]
