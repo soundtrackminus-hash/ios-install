@@ -28,6 +28,7 @@
           '<span class="app-card__icon"><img src="' + app.iconUrl + '" alt="" loading="lazy"></span>' +
           '<div class="app-card__info">' +
             '<div class="app-card__name" title="' + (app.name || '') + '">' + (app.name || '') + '</div>' +
+            (app.description ? '<div class="app-card__desc" style="font-size:0.85rem;color:#666;">' + app.description + '</div>' : '') +
             '<div class="app-card__meta">v' + (app.version || '?') + ' · ' + (app.sizeFormatted || '') + '</div>' +
           '</div>' +
         '</div>' +
