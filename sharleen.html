@@ -89,13 +89,25 @@
     popupContent.innerHTML = '';
     const span = document.createElement('div');
     span.style.color = '#000';
-    span.style.fontSize = '3rem';
     span.style.fontWeight = 'bold';
     span.style.textAlign = 'center';
     span.style.padding = '1rem';
+    span.style.wordBreak = 'break-all';
     span.textContent = text;
     popupContent.appendChild(span);
     popup.classList.add('active');
+    // Adapt font size to content length
+    adjustFont(text, span);
+  }
+
+  function adjustFont(text, span) {
+    const len = text.length;
+    let fontSize = 3; // rem
+    if (len > 40) fontSize = 1.2;
+    else if (len > 30) fontSize = 1.6;
+    else if (len > 20) fontSize = 2.0;
+    else if (len > 15) fontSize = 2.4;
+    span.style.fontSize = fontSize + 'rem';
   }
 
   // Close on click outside
