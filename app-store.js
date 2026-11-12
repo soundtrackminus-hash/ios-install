@@ -29,7 +29,7 @@
           '<div class="app-card__info">' +
             '<div class="app-card__name" title="' + (app.name || '') + '">' + (app.name || '') + '</div>' +
             (app.description ? '<div class="app-card__desc" style="font-size:0.85rem;color:#666;">' + app.description + '</div>' : '') +
-            '<div class="app-card__meta">v' + (app.version || '?') + ' · ' + (app.sizeFormatted || '') + '</div>' +
+            '<div class="app-card__meta">v' + (app.version || app.entry?.version || '?') + ' · ' + (app.sizeFormatted || app.entry?.sizeFormatted || '') + '</div>' +
           '</div>' +
         '</div>' +
         '<div class="app-card__actions">' +
@@ -47,7 +47,8 @@
     var sort = document.getElementById('sort').value;
     var list = APPS.filter(function (a) {
       return (a.name || '').toLowerCase().indexOf(q) !== -1 ||
-             (a.searchTags || '').toLowerCase().indexOf(q) !== -1;
+             (a.searchTags || '').toLowerCase().indexOf(q) !== -1 ||
+             (a.description || '').toLowerCase().indexOf(q) !== -1;
     });
     if (sort === 'name-asc') {
       list.sort(function (a, b) { return (a.name || '').localeCompare(b.name || '', 'ru'); });
