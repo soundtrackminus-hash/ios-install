@@ -7,43 +7,45 @@
 <title>Установка приложений на iPhone (Sharleen)</title>
 <link rel="stylesheet" href="styles.css">
 <style>
-.header__info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0.5rem 0;
-  cursor: pointer;
-}
-.info-line {
-  font-size: 1rem;
-  color: #555;
-  border-bottom: 1px dashed transparent;
-}
-.info-line:hover {
-  border-bottom-color: #aaa;
-}
-.popup-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.5);
-  display: none;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-}
-.popup-overlay.active {
-  display: flex;
-}
-.popup-content {
-  background: #fff;
-  padding: 1.5rem 2rem;
-  border-radius: 8px;
-  text-align: center;
-  font-size: 1.2rem;
-  max-width: 80%;
-}
-</style>
+  .header__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+  .info-line {
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px dashed transparent;
+    white-space: nowrap;
+  }
+  .info-line:hover {
+    border-bottom-color: #aaa;
+  }
+  .popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .popup-overlay.active {
+    display: flex;
+  }
+  .popup-content {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    max-width: 80%;
+    overflow: hidden;
+  }
+  </style>
 </head>
 <body>
 <header class="header">
@@ -92,7 +94,10 @@
     span.style.fontWeight = 'bold';
     span.style.textAlign = 'center';
     span.style.padding = '1rem';
-    span.style.wordBreak = 'break-all';
+    span.style.whiteSpace = 'nowrap';
+    span.style.overflow = 'hidden';
+    span.style.textOverflow = 'ellipsis';
+    span.style.maxWidth = '100%';
     span.textContent = text;
     popupContent.appendChild(span);
     popup.classList.add('active');
