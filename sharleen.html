@@ -6,11 +6,53 @@
 <meta name="robots" content="noindex">
 <title>Установка приложений на iPhone (Sharleen)</title>
 <link rel="stylesheet" href="styles.css">
+<style>
+.header__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+  cursor: pointer;
+}
+.info-line {
+  font-size: 1rem;
+  color: #555;
+  border-bottom: 1px dashed transparent;
+}
+.info-line:hover {
+  border-bottom-color: #aaa;
+}
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.popup-overlay.active {
+  display: flex;
+}
+.popup-content {
+  background: #fff;
+  padding: 1.5rem 2rem;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 80%;
+}
+</style>
 </head>
 <body>
 <header class="header">
   <h1>Установка приложений на iPhone</h1>
   <p class="header__note">Выберите приложение. Нажмите «Скачать» — установка начнётся после подтверждения в Настройках.</p>
+  <div class="header__info" onclick="togglePopup()">
+    <span class="info-line">sharleenbarnts70584@hotmail.com</span>
+    <span class="info-line">Aa156321!</span>
+  </div>
 </header>
 
 <div class="toolbar">
@@ -35,10 +77,33 @@
   </div>
 </div>
 
+<div id="popup-overlay" class="popup-overlay">
+  <div class="popup-content" id="popup-content"></div>
+</div>
+
 <script>
-  // Отдельный каталог: приложения, скачанные под аккаунтом sharleenbarnts70584@hotmail.com (слот sharleen).
+  const infoLines = document.querySelectorAll('.info-line');
+  const popup = document.getElementById('popup-overlay');
+  const popupContent = document.getElementById('popup-content');
+
+  function togglePopup() {
+    if (popup.classList.contains('active')) {
+      popup.classList.remove('active');
+    } else {
+      popup.classList.add('active');
+      popupContent.textContent = '';
+      // Combine text from both lines
+      popupContent.textContent = infoLines[0].textContent + '\n' + infoLines[1].textContent;
+    }
+  }
+
+  // Close on click outside
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) popup.classList.remove('active');
+  });
+
+  // Catalog and QR worker definitions
   window.CATALOG_URL = 'catalog-sharleen.json';
-  // Адрес Cloudflare Worker для одноразовых QR-кодов (общий с основной страницей).
   window.QR_WORKER = 'https://ios-install-qr.smoothe.workers.dev';
 </script>
 <script src="app-store.js"></script>
