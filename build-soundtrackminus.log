@@ -1,0 +1,27 @@
+09:18:10 файлов в локальной папке: 16
+09:18:10 уже размещено имён: 0
+09:18:10 === Anero_ваш_онлайн_помощник.ipa (524 МБ) ===
+09:19:08   релиз есть, а ассет отсутствует — дозагружаю
+09:20:18 OK Anero v230.1 slug=o-anero (524 МБ, application/octet-stream)
+09:20:18 === Atoy.ipa (90 МБ) ===
+09:20:22   ассет уже на GitHub, пропускаю загрузку
+09:20:23 OK ATOY v13.95 slug=o-atoy (90 МБ, application/octet-stream)
+09:20:23 === GetQuot.ipa (134 МБ) ===
+09:21:17   релиз есть, а ассет отсутствует — дозагружаю
+09:21:39 OK GetQuot v2.0.0 slug=o-getquot (134 МБ, application/octet-stream)
+09:21:39 === Kafario.ipa (36 МБ) ===
+09:22:34   релиз есть, а ассет отсутствует — дозагружаю
+09:22:45 OK Kafario v2.1.0 slug=o-kafario (36 МБ, application/octet-stream)
+09:22:45 === Photos.ipa (10 МБ) ===
+09:23:33 FAIL Photos.ipa : ассет не появился на GitHub
+09:23:33 === PianoWave.ipa (68 МБ) ===
+09:24:28   релиз есть, а ассет отсутствует — дозагружаю
+09:24:44 OK PianoWave v1.2.0 slug=o-pianowave (68 МБ, application/octet-stream)
+09:24:44 === Simpler_learn_English_easily.ipa (128 МБ) ===
+09:25:47 FAIL Simpler_learn_English_easily.ipa : ассет не появился на GitHub
+09:25:47 === SlicingDices.ipa (55 МБ) ===
+09:26:42   релиз есть, а ассет отсутствует — дозагружаю
+09:26:56 OK SlicingDices v1.3.0 slug=o-slicingdices (55 МБ, application/octet-stream)
+09:26:56 === Yaqin Messenger.ipa (67 МБ) ===
+09:27:52 FAIL Yaqin Messenger.ipa : ассет не появился на GitHub
+09:27:52 === Аудиотропа.ipa (280 МБ) ===

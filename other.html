@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Установка приложений на iPhone (2)</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+  .info-line {
+    font-size: 1rem;
+    color: #555;
+    border-bottom: 1px dashed transparent;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 0.25rem 0;
+  }
+  .info-line:hover {
+    border-bottom-color: #aaa;
+  }
+  .popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+  }
+  .popup-overlay.active {
+    display: flex;
+  }
+  .popup-content {
+    background: #fff;
+    padding: 1.5rem 2rem;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2rem;
+    min-width: fit-content;
+    max-width: none;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<header class="header">
+  <h1>Установка приложений на iPhone</h1>
+  <p class="header__note">Выберите приложение. Нажмите «Скачать» — установка начнётся после подтверждения в Настройках.</p>
+  <div class="info-line" onclick="showPopup('a9953303193@gmail.com')">a9953303193@gmail.com</div>
+  <div class="info-line" onclick="showPopup('Aa156321!')">Aa156321!</div>
+</header>
+
+<div class="toolbar">
+  <input id="search" type="search" placeholder="Поиск приложения..." autocomplete="off">
+  <select id="sort">
+    <option value="default">По умолчанию</option>
+    <option value="name-asc">Имя (А–Я)</option>
+    <option value="size-desc">Размер (сначала большие)</option>
+    <option value="size-asc">Размер (сначала малые)</option>
+  </select>
+</div>
+
+<div id="apps-container" class="apps"></div>
+<footer class="footer"><span id="shown-count"></span> из <span id="total-count"></span></footer>
+
+<div id="qr-modal" class="qr-modal hidden">
+  <div class="qr-modal__card">
+    <h3 id="qr-title">QR-код</h3>
+    <img id="qr-image" src="" alt="QR-код">
+    <p class="qr-modal__hint" id="qr-hint"></p>
+    <button class="qr-modal__close" id="qr-close">Закрыть</button>
+  </div>
+</div>
+
+<div id="popup-overlay" class="popup-overlay">
+  <div class="popup-content" id="popup-content"></div>
+</div>
+
+<script>
+  const popup = document.getElementById('popup-overlay');
+  const popupContent = document.getElementById('popup-content');
+
+  function showPopup(text) {
+    popupContent.innerHTML = '';
+    const span = document.createElement('div');
+    span.style.color = '#000';
+    span.style.fontWeight = 'bold';
+    span.style.textAlign = 'center';
+    span.style.padding = '1rem';
+    span.style.whiteSpace = 'nowrap';
+    span.textContent = text;
+    popupContent.appendChild(span);
+    popup.classList.add('active');
+    // Adapt font size to content length
+    adjustFont(text, span);
+  }
+
+  function adjustFont(text, span) {
+    const len = text.length;
+    let fontSize = 3; // rem
+    if (len > 40) fontSize = 1.2;
+    else if (len > 30) fontSize = 1.6;
+    else if (len > 20) fontSize = 2.0;
+    else if (len > 15) fontSize = 2.4;
+    span.style.fontSize = fontSize + 'rem';
+  }
+
+  // Close on click outside
+  popup.addEventListener('click', (e) => {
+    if (e.target === popup) popup.classList.remove('active');
+  });
+
+  // Отдельный каталог: приложения, скачанные под аккаунтом a9953303193 (слот other).
+  window.CATALOG_URL = 'catalog-other.json';
+  // Адрес Cloudflare Worker для одноразовых QR-кодов (общий с основной страницей).
+  window.QR_WORKER = 'https://ios-install-qr.smoothe.workers.dev';
+</script>
+
+<script src="app-store.js"></script>
+</body>
+</html>

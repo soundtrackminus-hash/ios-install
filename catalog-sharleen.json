@@ -1,0 +1,405 @@
+[
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/1108185179.ipa",
+  "status": "ok",
+  "size": 7737146,
+  "slug": "sharleen-calendar",
+  "entry": {
+   "name": "Calendar",
+   "version": "2.6",
+   "slug": "sharleen-calendar",
+   "bundleId": "com.apple.mobilecal",
+   "size": 7737146,
+   "sizeFormatted": "7.4 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-calendar/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-calendar-2.6/1108185179.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-calendar.png",
+   "searchTags": "sharleen_calendar"
+  },
+  "name": "Calendar",
+  "description": "Рамблер почта и Сбер диск"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6448322800.ipa",
+  "status": "ok",
+  "size": 99046090,
+  "slug": "sharleen-zdorove",
+  "entry": {
+   "name": "Здоровье",
+   "version": "3.13.2",
+   "slug": "sharleen-zdorove",
+   "bundleId": "kz.origon.empapp",
+   "size": 99046090,
+   "sizeFormatted": "94.5 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-zdorove/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-zdorove-3.13.2/6448322800.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zdorove.png",
+   "searchTags": "sharleen_zdorove"
+  },
+  "name": "Здоровье",
+  "description": "СОГАЗ"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6450411829.ipa",
+  "status": "ok",
+  "size": 94984022,
+  "slug": "sharleen-atoy",
+  "entry": {
+   "name": "ATOY",
+   "version": "13.95",
+   "slug": "sharleen-atoy",
+   "bundleId": "ru.atoy.selfcare",
+   "size": 94984022,
+   "sizeFormatted": "90.6 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-atoy/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-atoy-13.95/6450411829.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-atoy.png",
+   "searchTags": "sharleen_atoy"
+  },
+  "name": "ATOY",
+  "description": "Йота"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6476965022.ipa",
+  "status": "ok",
+  "size": 231070114,
+  "slug": "sharleen-mobilecheck",
+  "entry": {
+   "name": "MobileCheck",
+   "version": "3.18.4",
+   "slug": "sharleen-mobilecheck",
+   "bundleId": "com.mobilecheck.survey",
+   "size": 231070114,
+   "sizeFormatted": "220.4 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-mobilecheck/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-mobilecheck-3.18.4/6476965022.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-mobilecheck.png",
+   "searchTags": "sharleen_mobilecheck"
+  },
+  "name": "MobileCheck",
+  "description": "Совкомбанк Бизнес"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6756371742.ipa",
+  "status": "ok",
+  "size": 108158570,
+  "slug": "sharleen-bak-bonus",
+  "entry": {
+   "name": "Бак+Бонус",
+   "version": "1.1.1",
+   "slug": "sharleen-bak-bonus",
+   "bundleId": "ru.bakbonus.appstarter",
+   "size": 108158570,
+   "sizeFormatted": "103.1 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-bak-bonus/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-bak-bonus-1.1.1/6756371742.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-bak-bonus.png",
+   "searchTags": "sharleen_bak_bonus"
+  },
+  "name": "Бак+Бонус",
+  "description": "Газпромнефть"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6759976509.ipa",
+  "status": "ok",
+  "size": 115550454,
+  "slug": "sharleen-billfo",
+  "entry": {
+   "name": "Billfo",
+   "version": "1.159.21",
+   "slug": "sharleen-billfo",
+   "bundleId": "ru.billfo.mobile",
+   "size": 115550454,
+   "sizeFormatted": "110.2 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-billfo/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-billfo-1.159.21/6759976509.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-billfo.png",
+   "searchTags": "sharleen_billfo"
+  },
+  "name": "Billfo",
+  "description": "Газпром инвестиции"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6762205316.ipa",
+  "status": "ok",
+  "size": 47339163,
+  "slug": "sharleen-yandeks-sim",
+  "entry": {
+   "name": "Яндекс Сим",
+   "version": "1.8.0",
+   "slug": "sharleen-yandeks-sim",
+   "bundleId": "ru.yandex.simapp",
+   "size": 47339163,
+   "sizeFormatted": "45.1 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-yandeks-sim/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-yandeks-sim-1.8.0/6762205316.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-yandeks-sim.png",
+   "searchTags": "sharleen_yandeks_sim"
+  },
+  "name": "Яндекс Сим",
+  "description": "Яндекс Сим"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6766530710.ipa",
+  "status": "ok",
+  "size": 58663410,
+  "slug": "sharleen-slicingdices",
+  "entry": {
+   "name": "SlicingDices",
+   "version": "1.3.0",
+   "slug": "sharleen-slicingdices",
+   "bundleId": "com.slicingdice.game",
+   "size": 58663410,
+   "sizeFormatted": "55.9 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-slicingdices/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-slicingdices-1.3.0/6766530710.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-slicingdices.png",
+   "searchTags": "sharleen_slicingdices"
+  },
+  "name": "SlicingDices",
+  "description": "РуТюб"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6769063290.ipa",
+  "status": "ok",
+  "size": 472815122,
+  "slug": "sharleen-patrolkit",
+  "entry": {
+   "name": "PatrolKit",
+   "version": "234.0",
+   "slug": "sharleen-patrolkit",
+   "bundleId": "ru.patrolkit",
+   "size": 472815122,
+   "sizeFormatted": "450.9 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-patrolkit/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-patrolkit-234.0/6769063290.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-patrolkit.png",
+   "searchTags": "sharleen_patrolkit",
+   "description": "Авито"
+  },
+  "name": "PatrolKit",
+  "description": "Авито"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6775435476.ipa",
+  "status": "ok",
+  "size": 141476499,
+  "slug": "sharleen-getquot",
+  "entry": {
+   "name": "GetQuot",
+   "version": "2.0.0",
+   "slug": "sharleen-getquot",
+   "bundleId": "pro.smartitservices.getquote",
+   "size": 141476499,
+   "sizeFormatted": "134.9 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-getquot/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-getquot-2.0.0/6775435476.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-getquot.png",
+   "searchTags": "sharleen_getquot"
+  },
+  "name": "GetQuot",
+  "description": "ВТБ инвестиции старое"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6796619816.ipa",
+  "status": "ok",
+  "size": 109259404,
+  "slug": "sharleen-alrosa-air-company",
+  "entry": {
+   "name": "ALROSA Air Company",
+   "version": "2.1.40",
+   "slug": "sharleen-alrosa-air-company",
+   "bundleId": "com.alrosa",
+   "size": 109259404,
+   "sizeFormatted": "104.2 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-alrosa-air-company/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-alrosa-air-company-2.1.40/6796619816.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-alrosa-air-company.png",
+   "searchTags": "sharleen_alrosa_air_company"
+  },
+  "name": "ALROSA Air Company",
+  "description": "ALROSA Air Company"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6798219417.ipa",
+  "status": "ok",
+  "size": 155886590,
+  "slug": "sharleen-room-assist",
+  "entry": {
+   "name": "Room Assist",
+   "version": "1.0.2",
+   "slug": "sharleen-room-assist",
+   "bundleId": "online.roomtop.householdings",
+   "size": 155886590,
+   "sizeFormatted": "148.7 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-room-assist/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-room-assist-1.0.2/6798219417.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-room-assist.png",
+   "searchTags": "sharleen_room_assist"
+  },
+  "name": "Room Assist",
+  "description": "Дом рф"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6801144026.ipa",
+  "status": "ok",
+  "size": 45844625,
+  "slug": "sharleen-rstudio",
+  "entry": {
+   "name": "RStudio",
+   "version": "1.1.0",
+   "slug": "sharleen-rstudio",
+   "bundleId": "com.tech.rstudio",
+   "size": 45844625,
+   "sizeFormatted": "43.7 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-rstudio/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-rstudio-1.1.0/6801144026.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-rstudio.png",
+   "searchTags": "sharleen_rstudio"
+  },
+  "name": "RStudio",
+  "description": "РуТюб студио"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6802238031.ipa",
+  "status": "ok",
+  "size": 116656499,
+  "slug": "sharleen-zoodelivery",
+  "entry": {
+   "name": "ZooDelivery",
+   "version": "1.1.0",
+   "slug": "sharleen-zoodelivery",
+   "bundleId": "com.pecta.zoodelivery",
+   "size": 116656499,
+   "sizeFormatted": "111.3 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-zoodelivery/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-zoodelivery-1.1.0/6802238031.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-zoodelivery.png",
+   "searchTags": "sharleen_zoodelivery",
+   "description": "Premier кинотеатр"
+  },
+  "name": "ZooDelivery",
+  "description": "Premier кинотеатр"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6803519628.ipa",
+  "status": "ok",
+  "size": 38575581,
+  "slug": "sharleen-kafario",
+  "entry": {
+   "name": "Kafario",
+   "version": "2.1.0",
+   "slug": "sharleen-kafario",
+   "bundleId": "com.samuelfab.kafario",
+   "size": 38575581,
+   "sizeFormatted": "36.8 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-kafario/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-kafario-2.1.0/6803519628.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-kafario.png",
+   "searchTags": "sharleen_kafario"
+  },
+  "name": "Kafario",
+  "description": "ВТБ инвестиции"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6804635291.ipa",
+  "status": "ok",
+  "size": 83154974,
+  "slug": "sharleen-strelka-poekhali",
+  "entry": {
+   "name": "Стрелка Поехали",
+   "version": "26.9.18",
+   "slug": "sharleen-strelka-poekhali",
+   "bundleId": "ru.mosreg.StrelkaMO",
+   "size": 83154974,
+   "sizeFormatted": "79.3 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-strelka-poekhali/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-strelka-poekhali-26.9.18/6804635291.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-strelka-poekhali.png",
+   "searchTags": "sharleen_strelka_poekhali"
+  },
+  "name": "Стрелка Поехали",
+  "description": "Стрелка Поехали"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6805045741.ipa",
+  "status": "ok",
+  "size": 294518648,
+  "slug": "sharleen-tropa",
+  "entry": {
+   "name": "Tropa",
+   "version": "1.3",
+   "slug": "sharleen-tropa",
+   "bundleId": "com.oxidian.tropa",
+   "size": 294518648,
+   "sizeFormatted": "280.9 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-tropa/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-tropa-1.3/6805045741.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-tropa.png",
+   "searchTags": "sharleen_tropa"
+  },
+  "name": "Tropa",
+  "description": "ВК музыка"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6812428354.ipa",
+  "status": "ok",
+  "size": 71053438,
+  "slug": "sharleen-yaqin",
+  "entry": {
+   "name": "Yaqin",
+   "version": "1.3.0",
+   "slug": "sharleen-yaqin",
+   "bundleId": "uz.yaqin.app",
+   "size": 71053438,
+   "sizeFormatted": "67.8 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-yaqin/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-yaqin-1.3.0/6812428354.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-yaqin.png",
+   "searchTags": "sharleen_yaqin"
+  },
+  "name": "Yaqin",
+  "description": "Макс, Max"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/6816046522.ipa",
+  "status": "ok",
+  "size": 234759140,
+  "slug": "sharleen-luchshe-onlayn",
+  "entry": {
+   "name": "Лучше Онлайн",
+   "version": "1.0.0",
+   "slug": "sharleen-luchshe-onlayn",
+   "bundleId": "com.vernerlohmus.luchshe",
+   "size": 234759140,
+   "sizeFormatted": "223.9 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-luchshe-onlayn/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-luchshe-onlayn-1.0.0/6816046522.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-luchshe-onlayn.png",
+   "searchTags": "sharleen_luchshe_onlayn",
+   "description": "Лента"
+  },
+  "name": "Лучше Онлайн",
+  "description": "Лента"
+ },
+ {
+  "fileId": "/srv/storage/ipa/sharleenbarnts70584@hotmail.com/771700826.ipa",
+  "status": "ok",
+  "size": 247915409,
+  "slug": "sharleen-pochta-rossii",
+  "entry": {
+   "name": "Почта России",
+   "version": "7.8.6",
+   "slug": "sharleen-pochta-rossii",
+   "bundleId": "ru.russianpost.Russian-Post",
+   "size": 247915409,
+   "sizeFormatted": "236.4 МБ",
+   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sharleen-pochta-rossii/manifest.plist",
+   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sharleen-pochta-rossii-7.8.6/771700826.ipa",
+   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sharleen-pochta-rossii.png",
+   "searchTags": "sharleen_pochta_rossii"
+  },
+  "name": "Почта России",
+  "description": "Почта России"
+ }
+]

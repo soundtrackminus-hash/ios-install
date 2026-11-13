@@ -1,0 +1,74 @@
+[
+ {
+  "name": "Anero",
+  "version": "230.1",
+  "slug": "o-anero",
+  "bundleId": "online.anero.app",
+  "size": 550156354,
+  "sizeFormatted": "524.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-anero/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-anero-230.1/o-anero.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-anero.png",
+  "searchTags": "o_anero"
+ },
+ {
+  "name": "ATOY",
+  "version": "13.95",
+  "slug": "o-atoy",
+  "bundleId": "ru.atoy.selfcare",
+  "size": 94984078,
+  "sizeFormatted": "90.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-atoy/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-atoy-13.95/o-atoy.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-atoy.png",
+  "searchTags": "o_atoy"
+ },
+ {
+  "name": "GetQuot",
+  "version": "2.0.0",
+  "slug": "o-getquot",
+  "bundleId": "pro.smartitservices.getquote",
+  "size": 141476535,
+  "sizeFormatted": "134.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-getquot/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-getquot-2.0.0/o-getquot.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-getquot.png",
+  "searchTags": "o_getquot"
+ },
+ {
+  "name": "Kafario",
+  "version": "2.1.0",
+  "slug": "o-kafario",
+  "bundleId": "com.samuelfab.kafario",
+  "size": 38575628,
+  "sizeFormatted": "36.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-kafario/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-kafario-2.1.0/o-kafario.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-kafario.png",
+  "searchTags": "o_kafario"
+ },
+ {
+  "name": "PianoWave",
+  "version": "1.2.0",
+  "slug": "o-pianowave",
+  "bundleId": "com.pianowave.musicgame",
+  "size": 71603974,
+  "sizeFormatted": "68.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-pianowave/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-pianowave-1.2.0/o-pianowave.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-pianowave.png",
+  "searchTags": "o_pianowave"
+ },
+ {
+  "name": "SlicingDices",
+  "version": "1.3.0",
+  "slug": "o-slicingdices",
+  "bundleId": "com.slicingdice.game",
+  "size": 58663455,
+  "sizeFormatted": "55.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-slicingdices/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-slicingdices-1.3.0/o-slicingdices.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-slicingdices.png",
+  "searchTags": "o_slicingdices"
+ }
+]

@@ -1,0 +1,94 @@
+11:07:04 файлов в локальной папке: 23
+11:07:04 уже размещено имён: 0
+11:07:04 === 1108185179.ipa (7 МБ) ===
+11:07:56 FAIL 1108185179.ipa : ассет не появился на GitHub
+11:07:56 === 1265670676.ipa (128 МБ) ===
+11:09:03 FAIL 1265670676.ipa : ассет не появился на GitHub
+11:09:03 === 1496904594.ipa (553 МБ) ===
+11:11:00 FAIL 1496904594.ipa : ассет не появился на GitHub
+11:11:00 === 1584215428.ipa (10 МБ) ===
+11:11:53 FAIL 1584215428.ipa : ассет не появился на GitHub
+11:11:53 === 6448322800.ipa (94 МБ) ===
+11:12:57 FAIL 6448322800.ipa : ассет не появился на GitHub
+11:12:57 === 6450411829.ipa (90 МБ) ===
+11:13:59 FAIL 6450411829.ipa : ассет не появился на GitHub
+11:13:59 === 6476965022.ipa (220 МБ) ===
+11:15:42 файлов в локальной папке: 23
+11:15:42 уже размещено имён: 0
+11:15:42 === 1108185179.ipa (7 МБ) ===
+11:15:45   ассет уже на GitHub, пропускаю загрузку
+11:15:48 OK Calendar v2.6 slug=sharleen-calendar (7 МБ, application/octet-stream)
+11:15:48 === 1265670676.ipa (128 МБ) ===
+11:15:52   ассет уже на GitHub, пропускаю загрузку
+11:15:52 OK Simpler v6.6.5 slug=sharleen-simpler (128 МБ, application/octet-stream)
+11:15:52 === 1496904594.ipa (553 МБ) ===
+11:15:57   ассет уже на GitHub, пропускаю загрузку
+11:15:58 OK 1496904594 v13.71.09 slug=sharleen-1496904594 (553 МБ, application/octet-stream)
+11:15:58 === 1584215428.ipa (10 МБ) ===
+11:16:02   ассет уже на GitHub, пропускаю загрузку
+11:16:02 OK Photos v3.9 slug=sharleen-photos (10 МБ, application/octet-stream)
+11:16:02 === 6448322800.ipa (94 МБ) ===
+11:16:06   ассет уже на GitHub, пропускаю загрузку
+11:16:06 OK Здоровье v3.13.2 slug=sharleen-zdorove (94 МБ, application/octet-stream)
+11:16:06 === 6450411829.ipa (90 МБ) ===
+11:16:10   ассет уже на GitHub, пропускаю загрузку
+11:16:11 OK ATOY v13.95 slug=sharleen-atoy (90 МБ, application/octet-stream)
+11:16:11 === 6476965022.ipa (220 МБ) ===
+11:16:51 OK MobileCheck v3.18.4 slug=sharleen-mobilecheck (220 МБ, application/octet-stream)
+11:16:51 === 6756371742.ipa (103 МБ) ===
+11:17:14 OK Бак+Бонус v1.1.1 slug=sharleen-bak-bonus (103 МБ, application/octet-stream)
+11:17:14 === 6759976509.ipa (110 МБ) ===
+11:17:38 OK Billfo v1.159.21 slug=sharleen-billfo (110 МБ, application/octet-stream)
+11:17:38 === 6762205316.ipa (45 МБ) ===
+11:17:54 OK Яндекс Сим v1.8.0 slug=sharleen-yandeks-sim (45 МБ, application/octet-stream)
+11:17:54 === 6766530710.ipa (55 МБ) ===
+11:18:18 OK SlicingDices v1.3.0 slug=sharleen-slicingdices (55 МБ, application/octet-stream)
+11:18:18 === 6769063290.ipa (450 МБ) ===
+11:19:18 OK PatrolKit v234.0 slug=sharleen-patrolkit (450 МБ, application/octet-stream)
+11:19:18 === 6775435476.ipa (134 МБ) ===
+11:19:44 OK GetQuot v2.0.0 slug=sharleen-getquot (134 МБ, application/octet-stream)
+11:19:44 === 6796619816.ipa (104 МБ) ===
+11:20:07 OK ALROSA Air Company v2.1.40 slug=sharleen-alrosa-air-company (104 МБ, application/octet-stream)
+11:20:07 === 6798219417.ipa (148 МБ) ===
+11:20:35 OK Room Assist v1.0.2 slug=sharleen-room-assist (148 МБ, application/octet-stream)
+11:20:35 === 6801144026.ipa (43 МБ) ===
+11:20:50 OK RStudio v1.1.0 slug=sharleen-rstudio (43 МБ, application/octet-stream)
+11:20:50 === 6802238031.ipa (111 МБ) ===
+11:21:13 OK ZooDelivery v1.1.0 slug=sharleen-zoodelivery (111 МБ, application/octet-stream)
+11:21:13 === 6803519628.ipa (36 МБ) ===
+11:21:29 OK Kafario v2.1.0 slug=sharleen-kafario (36 МБ, application/octet-stream)
+11:21:29 === 6804635291.ipa (79 МБ) ===
+11:21:50 OK Стрелка Поехали v26.9.18 slug=sharleen-strelka-poekhali (79 МБ, application/octet-stream)
+11:21:50 === 6805045741.ipa (280 МБ) ===
+11:22:33 OK Tropa v1.3 slug=sharleen-tropa (280 МБ, application/octet-stream)
+11:22:33 === 6812428354.ipa (67 МБ) ===
+11:23:11 файлов в локальной папке: 23
+11:23:11 уже размещено имён: 20
+11:23:11 skip 1108185179.ipa (sharleen-calendar уже готов)
+11:23:11 skip 1265670676.ipa (sharleen-simpler уже готов)
+11:23:11 skip 1496904594.ipa (sharleen-1496904594 уже готов)
+11:23:11 skip 1584215428.ipa (sharleen-photos уже готов)
+11:23:11 skip 6448322800.ipa (sharleen-zdorove уже готов)
+11:23:11 skip 6450411829.ipa (sharleen-atoy уже готов)
+11:23:11 skip 6476965022.ipa (sharleen-mobilecheck уже готов)
+11:23:11 skip 6756371742.ipa (sharleen-bak-bonus уже готов)
+11:23:11 skip 6759976509.ipa (sharleen-billfo уже готов)
+11:23:11 skip 6762205316.ipa (sharleen-yandeks-sim уже готов)
+11:23:11 skip 6766530710.ipa (sharleen-slicingdices уже готов)
+11:23:11 skip 6769063290.ipa (sharleen-patrolkit уже готов)
+11:23:11 skip 6775435476.ipa (sharleen-getquot уже готов)
+11:23:11 skip 6796619816.ipa (sharleen-alrosa-air-company уже готов)
+11:23:11 skip 6798219417.ipa (sharleen-room-assist уже готов)
+11:23:11 skip 6801144026.ipa (sharleen-rstudio уже готов)
+11:23:11 skip 6802238031.ipa (sharleen-zoodelivery уже готов)
+11:23:11 skip 6803519628.ipa (sharleen-kafario уже готов)
+11:23:11 skip 6804635291.ipa (sharleen-strelka-poekhali уже готов)
+11:23:11 skip 6805045741.ipa (sharleen-tropa уже готов)
+11:23:11 === 6812428354.ipa (67 МБ) ===
+11:24:04   релиз есть, а ассет отсутствует — дозагружаю
+11:24:20 OK Yaqin v1.3.0 slug=sharleen-yaqin (67 МБ, application/octet-stream)
+11:24:20 === 6816046522.ipa (223 МБ) ===
+11:25:00 OK Лучше Онлайн v1.0.0 slug=sharleen-luchshe-onlayn (223 МБ, application/octet-stream)
+11:25:00 === 771700826.ipa (236 МБ) ===
+11:25:41 OK Почта России v7.8.6 slug=sharleen-pochta-rossii (236 МБ, application/octet-stream)
+11:25:41 ИТОГО в каталоге: 23
