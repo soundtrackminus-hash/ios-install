@@ -50,6 +50,19 @@
   "searchTags": "o_billfo"
  },
  {
+  "name": "Bulutuy",
+  "version": "26.6.1000",
+  "slug": "o-umniydom",
+  "bundleId": "kz.ios.umniydom",
+  "size": 135889133,
+  "sizeFormatted": "129.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-umniydom/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-umniydom-26.6.1000/umniydom.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-umniydom.png",
+  "searchTags": "o_umniydom",
+  "description": "Умный дом Сбера"
+ },
+ {
   "name": "Calendar",
   "version": "2.3",
   "slug": "o-calendar",
@@ -111,6 +124,16 @@
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-kafario.png",
   "searchTags": "o_kafario",
   "description": "ВТБ инвестиции"
+ },
+ {
+  "name": "MobileCheck",
+  "version": "3.18.4",
+  "slug": "o-mobile-check",
+  "bundle_id": "com.mobilecheck.survey",
+  "manifest_url": "https://soundtrackminus-hash.github.io/ios-install/apps/o-mobile-check/manifest.plist",
+  "icon_url": "https://soundtrackminus-hash.github.io/ios-install/icons/o-mobile-check.png",
+  "size": 231070163,
+  "description": "Совкомбанк Бизнес"
  },
  {
   "name": "Move Up",
@@ -396,15 +419,5 @@
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-yandeks-sim.png",
   "searchTags": "o_yandeks_sim",
   "description": "Яндекс Сим"
- },
- {
-  "name": "MobileCheck",
-  "version": "3.18.4",
-  "slug": "o-mobile-check",
-  "bundle_id": "com.mobilecheck.survey",
-  "manifest_url": "https://soundtrackminus-hash.github.io/ios-install/apps/o-mobile-check/manifest.plist",
-  "icon_url": "https://soundtrackminus-hash.github.io/ios-install/icons/o-mobile-check.png",
-  "size": 231070163,
-  "description": "Совкомбанк Бизнес"
  }
 ]
