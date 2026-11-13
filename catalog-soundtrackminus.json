@@ -30,10 +30,10 @@
   "bundleId": "kz.ios.umniydom",
   "size": 135889138,
   "sizeFormatted": "129.6 МБ",
-  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-bulutuy/manifest.plist",
-  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bulutuy-26.6.1000/sm-bulutuy.ipa",
-  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bulutuy.png",
-  "searchTags": "sm_bulutuy"
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-bulutuy-26.6.1000/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bulutuy-26.6.1000/umniydom.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bulutuy-26.6.1000.png",
+  "searchTags": "sm_bulutuy_26_6_1000"
  },
  {
   "name": "GetQuot",
