@@ -12,6 +12,18 @@
   "searchTags": "o_anero"
  },
  {
+  "name": "Anero",
+  "version": "230.1",
+  "slug": "sm-anero",
+  "bundleId": "online.anero.app",
+  "size": 550156354,
+  "sizeFormatted": "524.7 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-anero/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-anero-230.1/sm-anero.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-anero.png",
+  "searchTags": "sm_anero"
+ },
+ {
   "name": "ATOY",
   "version": "13.95",
   "slug": "o-atoy",
@@ -22,6 +34,42 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-atoy-13.95/o-atoy.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-atoy.png",
   "searchTags": "o_atoy"
+ },
+ {
+  "name": "ATOY",
+  "version": "13.95",
+  "slug": "sm-atoy",
+  "bundleId": "ru.atoy.selfcare",
+  "size": 94984078,
+  "sizeFormatted": "90.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-atoy/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-atoy-13.95/sm-atoy.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-atoy.png",
+  "searchTags": "sm_atoy"
+ },
+ {
+  "name": "Bulutuy",
+  "version": "26.6.1000",
+  "slug": "sm-bulutuy-26.6.1000",
+  "bundleId": "kz.ios.umniydom",
+  "size": 135889138,
+  "sizeFormatted": "129.6 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-bulutuy/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bulutuy-26.6.1000/sm-bulutuy.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bulutuy.png",
+  "searchTags": "sm_bulutuy"
+ },
+ {
+  "name": "Bulutuy",
+  "version": "26.10.1001",
+  "slug": "sm-umniydom-26.10.1001",
+  "bundleId": "kz.ios.umniydom",
+  "size": 151267791,
+  "sizeFormatted": "144.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-umniydom-26.10.1001/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bulutuy-26.10.1001/KZ.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-umniydom-26.10.1001.png",
+  "searchTags": "sm_bulutuy"
  },
  {
   "name": "GetQuot",
@@ -36,6 +84,18 @@
   "searchTags": "o_getquot"
  },
  {
+  "name": "GetQuot",
+  "version": "2.0.0",
+  "slug": "sm-getquot",
+  "bundleId": "pro.smartitservices.getquote",
+  "size": 141476535,
+  "sizeFormatted": "134.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-getquot/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-getquot-2.0.0/sm-getquot.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-getquot.png",
+  "searchTags": "sm_getquot"
+ },
+ {
   "name": "Kafario",
   "version": "2.1.0",
   "slug": "o-kafario",
@@ -46,6 +106,42 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-kafario-2.1.0/o-kafario.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-kafario.png",
   "searchTags": "o_kafario"
+ },
+ {
+  "name": "Kafario",
+  "version": "2.1.0",
+  "slug": "sm-kafario",
+  "bundleId": "com.samuelfab.kafario",
+  "size": 38575628,
+  "sizeFormatted": "36.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-kafario/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-kafario-2.1.0/sm-kafario.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-kafario.png",
+  "searchTags": "sm_kafario"
+ },
+ {
+  "name": "MobileCheck",
+  "version": "3.18.4",
+  "slug": "sm-mobilecheck",
+  "bundleId": "com.mobilecheck.survey",
+  "size": 231070168,
+  "sizeFormatted": "220.4 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-mobilecheck/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-mobilecheck-3.18.4/sm-mobilecheck.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-mobilecheck.png",
+  "searchTags": "sm_mobilecheck"
+ },
+ {
+  "name": "Photos",
+  "version": "3.9",
+  "slug": "sm-photos",
+  "bundleId": "com.apple.mobileslideshow",
+  "size": 10821037,
+  "sizeFormatted": "10.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-photos/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-photos-3.9/sm-photos.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-photos.png",
+  "searchTags": "sm_photos"
  },
  {
   "name": "PianoWave",
@@ -60,6 +156,30 @@
   "searchTags": "o_pianowave"
  },
  {
+  "name": "PianoWave",
+  "version": "1.2.0",
+  "slug": "sm-pianowave",
+  "bundleId": "com.pianowave.musicgame",
+  "size": 71603974,
+  "sizeFormatted": "68.3 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-pianowave/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-pianowave-1.2.0/sm-pianowave.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-pianowave.png",
+  "searchTags": "sm_pianowave"
+ },
+ {
+  "name": "Simpler",
+  "version": "6.6.5",
+  "slug": "sm-simpler",
+  "bundleId": "com.viamobi.Simpler",
+  "size": 134424281,
+  "sizeFormatted": "128.2 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-simpler/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-simpler-6.6.5/sm-simpler.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-simpler.png",
+  "searchTags": "sm_simpler"
+ },
+ {
   "name": "SlicingDices",
   "version": "1.3.0",
   "slug": "o-slicingdices",
@@ -70,5 +190,89 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-slicingdices-1.3.0/o-slicingdices.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-slicingdices.png",
   "searchTags": "o_slicingdices"
+ },
+ {
+  "name": "SlicingDices",
+  "version": "1.3.0",
+  "slug": "sm-slicingdices",
+  "bundleId": "com.slicingdice.game",
+  "size": 58663455,
+  "sizeFormatted": "55.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-slicingdices/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-slicingdices-1.3.0/sm-slicingdices.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-slicingdices.png",
+  "searchTags": "sm_slicingdices"
+ },
+ {
+  "name": "Tropa",
+  "version": "1.3",
+  "slug": "sm-tropa",
+  "bundleId": "com.oxidian.tropa",
+  "size": 294518686,
+  "sizeFormatted": "280.9 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-tropa/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-tropa-1.3/sm-tropa.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-tropa.png",
+  "searchTags": "sm_tropa"
+ },
+ {
+  "name": "Yaqin",
+  "version": "1.3.0",
+  "slug": "sm-yaqin",
+  "bundleId": "uz.yaqin.app",
+  "size": 71053485,
+  "sizeFormatted": "67.8 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-yaqin/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-yaqin-1.3.0/sm-yaqin.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-yaqin.png",
+  "searchTags": "sm_yaqin"
+ },
+ {
+  "name": "Бак+Бонус",
+  "version": "1.1.1",
+  "slug": "sm-bak-bonus",
+  "bundleId": "ru.bakbonus.appstarter",
+  "size": 108158603,
+  "sizeFormatted": "103.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-bak-bonus/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bak-bonus-1.1.1/sm-bak-bonus.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bak-bonus.png",
+  "searchTags": "sm_bak_bonus"
+ },
+ {
+  "name": "Здоровье",
+  "version": "3.13.2",
+  "slug": "sm-zdorove",
+  "bundleId": "kz.origon.empapp",
+  "size": 99046135,
+  "sizeFormatted": "94.5 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-zdorove/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-zdorove-3.13.2/sm-zdorove.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-zdorove.png",
+  "searchTags": "sm_zdorove"
+ },
+ {
+  "name": "Легко",
+  "version": "6.89.0",
+  "slug": "sm-legko",
+  "bundleId": "com.timofeykozuylichev.legko",
+  "size": 314724554,
+  "sizeFormatted": "300.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-legko/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-legko-6.89.0/sm-legko.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-legko.png",
+  "searchTags": "sm_legko"
+ },
+ {
+  "name": "Яндекс Сим",
+  "version": "1.8.0",
+  "slug": "sm-yandeks-sim",
+  "bundleId": "ru.yandex.simapp",
+  "size": 47339216,
+  "sizeFormatted": "45.1 МБ",
+  "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-yandeks-sim/manifest.plist",
+  "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-yandeks-sim-1.8.0/sm-yandeks-sim.ipa",
+  "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-yandeks-sim.png",
+  "searchTags": "sm_yandeks_sim"
  }
 ]
