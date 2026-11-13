@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Установка приложения</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header"><h1>Установка приложения</h1></header>
+
+<main style="max-width:420px;margin:2rem auto;text-align:center;">
+  <div id="go-card" class="app-card hidden">
+    <div class="app-card__head" style="justify-content:center;">
+      <span class="app-card__icon" style="width:72px;height:72px;">
+        <img id="go-icon" src="" alt="">
+      </span>
+    </div>
+    <h2 id="go-name" style="margin-top:0.7rem;"></h2>
+    <p class="app-card__meta" id="go-meta"></p>
+    <div class="app-card__actions">
+      <button class="btn btn-install" id="go-start" style="text-align:center;">Установить</button>
+      <p class="qr-modal__hint" style="margin-top:0.6rem;">
+        После нажатия iPhone спросит: откройте «Настройки» → «Основные» →
+        «VPN и управление устройством» и разрешите профиль разработчика.
+      </p>
+    </div>
+  </div>
+  <p id="go-error" class="qr-modal__hint"></p>
+</main>
+
+<script>
+(function () {
+  var params = new URLSearchParams(window.location.search);
+  var slug = params.get('slug');
+  if (!slug) { fail('Не указано приложение'); return; }
+
+  fetch('catalog.json').then(function (r) { return r.json(); }).then(function (catalog) {
+    var app = catalog.filter(function (a) { return a.slug === slug; })[0];
+    if (!app) { fail('Приложение не найдено'); return; }
+    document.getElementById('go-icon').src = app.iconUrl;
+    document.getElementById('go-name').textContent = app.name;
+    document.getElementById('go-meta').textContent = 'v' + app.version + ' · ' + app.sizeFormatted;
+    document.getElementById('go-card').classList.remove('hidden');
+    var url = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(app.manifestUrl);
+    var btn = document.getElementById('go-start');
+    btn.onclick = function () { window.location = url; };
+    setTimeout(function () { window.location = url; }, 800);
+  }).catch(function () { fail('Не удалось загрузить каталог'); });
+
+  function fail(msg) { document.getElementById('go-error').textContent = msg; }
+})();
+</script>
+</body>
+</html>

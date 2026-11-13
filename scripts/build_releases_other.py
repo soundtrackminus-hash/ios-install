@@ -180,8 +180,6 @@ def ensure_release(slug, ver):
 
 
 def main():
-    print("DEBUG: main started", flush=True)
-    print("DEBUG: IPA_DIR = %s" % IPA_DIR, flush=True)
     only = sys.argv[1] if len(sys.argv) > 1 else None
     if not IPA_DIR.exists():
         raise RuntimeError("IPA-каталог не существует: %s" % IPA_DIR)
@@ -195,7 +193,6 @@ def main():
     if only:
         files = [f for f in files if only.lower() in f["name"].lower()]
     files = sorted(files, key=lambda f: f["name"])
-    print("DEBUG: files count = %d" % len(files), flush=True)
     log("файлов в локальной папке: %d" % len(files))
     done = {}
     if DONE.exists():

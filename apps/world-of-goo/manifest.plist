@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://github.com/soundtrackminus-hash/ios-install/releases/download/world-of-goo-1.6/world-of-goo.ipa</string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.2dboy.worldofgoo</string>
+				<key>bundle-version</key>
+				<string>1.6</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>World of Goo</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>

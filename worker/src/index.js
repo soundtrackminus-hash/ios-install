@@ -1,0 +1,183 @@
+import qrcode from 'qrcode-generator';
+
+const CATALOG_BASE = 'https://soundtrackminus-hash.github.io/ios-install/';
+const CATALOG_URLS = [
+  CATALOG_BASE + 'catalog.json',
+  CATALOG_BASE + 'catalog-other.json',
+];
+const CACHE_TTL = 60;
+const LINK_TTL = 600;   // 10 минут, потом токен исчезает сам
+const SLUG_RE = /^[a-z0-9-]{1,64}$/;
+const TOKEN_RE = /^[a-f0-9]{32}$/;
+let catalogCache = { data: null, at: 0 };
+
+async function getCatalog() {
+  const now = Date.now() / 1000;
+  if (catalogCache.data && now - catalogCache.at < CACHE_TTL) return catalogCache.data;
+  const parts = await Promise.all(CATALOG_URLS.map(async (u) => {
+    try {
+      const r = await fetch(u, { cf: { cacheTtl: CACHE_TTL, cacheEverything: true } });
+      if (!r.ok) return [];
+      const list = await r.json();
+      return Array.isArray(list) ? list : [];
+    } catch (e) {
+      return [];
+    }
+  }));
+  const data = [].concat(...parts);
+  if (!data.length) throw new Error('catalog unavailable');
+  catalogCache = { data, at: now };
+  return data;
+}
+
+function randToken() {
+  const b = new Uint8Array(16);
+  crypto.getRandomValues(b);
+  return Array.from(b, (x) => x.toString(16).padStart(2, '0')).join('');
+}
+
+function qrSvg(text) {
+  const qr = qrcode(0, 'M');
+  qr.addData(text);
+  qr.make();
+  const svg = qr.createSvgTag(6, 3);
+  return svg.replace('<svg ', '<svg style="width:100%;height:auto;" ');
+}
+
+function cors(origin) {
+  return {
+    'Access-Control-Allow-Origin': origin || '*',
+    'Access-Control-Allow-Methods': 'GET, POST, OPTIONS',
+    'Access-Control-Allow-Headers': 'Content-Type',
+    'Cache-Control': 'no-store',
+  };
+}
+
+function json(status, body) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: Object.assign({ 'Content-Type': 'application/json; charset=utf-8' }, cors()),
+  });
+}
+
+function page(title, bodyHtml) {
+  return new Response('<!DOCTYPE html><html lang="ru"><head><meta charset="utf-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    '<meta name="robots" content="noindex">' +
+    '<title>' + title + '</title>' +
+    '<style>body{font-family:-apple-system,Segoe UI,Roboto,sans-serif;max-width:440px;' +
+    'margin:2rem auto;padding:0 1rem;color:#111}h1{font-size:1.3rem}' +
+    '.card{background:#f6f7f9;border:1px solid #e0e2e6;border-radius:16px;padding:1rem;margin:1rem 0}' +
+    'button{width:100%;background:#1c64f2;color:#fff;border:0;border-radius:12px;' +
+    'padding:.9rem;font-size:1rem;cursor:pointer}.hint{color:#6b7280;font-size:.85rem;' +
+    'margin-top:.8rem;line-height:1.4}</style></head><body>' + bodyHtml + '</body></html>', {
+    status: 200,
+    headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' },
+  });
+}
+
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+function absIcon(iconUrl) {
+  if (!iconUrl) return '';
+  return /^https?:\/\//.test(iconUrl) ? iconUrl : CATALOG_BASE + iconUrl;
+}
+
+function spentPage() {
+  return page('Ссылка больше не работает',
+    '<h1>Срок действия ссылки истёк.</h1>' +
+    '<p style="color:#6b7280">Ссылки живут 10 минут, потом перестают открываться.</p>' +
+    '<p>Откройте сайт <b>ios-install</b> и получите свежую.</p>');
+}
+
+function installPage(app) {
+  const itms = 'itms-services://?action=download-manifest&url=' + encodeURIComponent(app.manifestUrl);
+  return page('Установить ' + app.name,
+    '<h1>Установка</h1><div class="card"><b>' + esc(app.name) + '</b>' +
+    '<div style="color:#6b7280;font-size:.85rem;margin:.3rem 0">v' + esc(app.version) + ' · ' + esc(app.sizeFormatted) + '</div>' +
+    '<div style="display:flex;align-items:center;gap:1rem;margin:.8rem 0">' +
+    '<img src="' + esc(absIcon(app.iconUrl)) + '" alt="" style="width:64px;height:64px;border-radius:14px">' +
+    '<div>Нажмите кнопку, чтобы начать установку прямо сейчас.</div></div>' +
+    '<button onclick="location.href=\'' + itms + '\'">Установить сейчас</button>' +
+    '<div class="hint">Ссылка действует 10 минут с момента получения, потом перестаёт открываться. ' +
+    'Если установка оборвалась — зайдите на сайт ios-install и получите новую.</div>' +
+    '<div class="hint">После нажатия откройте «Настройки» → «Основные» → «VPN и управление устройством» ' +
+    'и разрешите профиль разработчика, если iPhone попросит.</div></div>' +
+    '<script>setTimeout(function(){location.href="' + itms + '";},700);</script>');
+}
+
+async function findApp(slug) {
+  const catalog = await getCatalog();
+  return catalog.find((a) => a.slug === slug) || null;
+}
+
+export default {
+  async fetch(request, env) {
+    const url = new URL(request.url);
+    const origin = url.origin;
+
+    if (request.method === 'OPTIONS') {
+      return new Response('', { status: 204, headers: cors(request.headers.get('Origin')) });
+    }
+
+    if (url.pathname === '/health') {
+      return json(200, { ok: true, ts: Date.now() });
+    }
+
+    // POST|GET /api/link/<slug> -> выпустить ссылку на 10 минут
+    const linkMatch = url.pathname.match(/^\/api\/link\/([a-z0-9-]+)$/);
+    if (linkMatch && (request.method === 'GET' || request.method === 'POST')) {
+      const slug = linkMatch[1];
+      if (!SLUG_RE.test(slug)) return json(400, { error: 'invalid slug' });
+      let app;
+      try { app = await findApp(slug); }
+      catch (e) { return json(502, { error: 'catalog unavailable' }); }
+      if (!app) return json(404, { error: 'slug not found' });
+      const token = randToken();
+      await env.QR_TOKENS.put(token, JSON.stringify({ s: slug }), { expirationTtl: LINK_TTL });
+      return json(200, { url: origin + '/i/' + token, ttl: LINK_TTL });
+    }
+
+    // GET /api/qr/<slug>.svg?t=... -> QR на ссылку (10 минут)
+    const qrMatch = url.pathname.match(/^\/api\/qr\/([a-z0-9-]+)\.svg$/);
+    if (qrMatch && request.method === 'GET') {
+      const slug = qrMatch[1];
+      if (!SLUG_RE.test(slug)) return json(400, { error: 'invalid slug' });
+      let app;
+      try { app = await findApp(slug); }
+      catch (e) { return json(502, { error: 'catalog unavailable' }); }
+      if (!app) return json(404, { error: 'slug not found' });
+      const token = randToken();
+      await env.QR_TOKENS.put(token, JSON.stringify({ s: slug }), { expirationTtl: LINK_TTL });
+      const svg = qrSvg(origin + '/i/' + token);
+      return new Response(svg, {
+        status: 200,
+        headers: Object.assign({ 'Content-Type': 'image/svg+xml' }, cors(request.headers.get('Origin'))),
+      });
+    }
+
+    // GET /i/<token> — работает, пока жив токен (KV TTL, 10 минут).
+    // Токен НЕ удаляем: ссылку можно переоткрыть, пока она не истекла.
+    const iMatch = url.pathname.match(/^\/i\/([a-f0-9]{32})$/);
+    if (iMatch && request.method === 'GET') {
+      const token = iMatch[1];
+      let raw;
+      try {
+        raw = await env.QR_TOKENS.get(token);
+      } catch (e) {
+        return page('Ошибка', '<h1>Временная ошибка.</h1><p>Откройте ссылку ещё раз.</p>');
+      }
+      if (!raw) return spentPage();
+      let p;
+      try { p = JSON.parse(raw); } catch (e) { return spentPage(); }
+      let app;
+      try { app = await findApp(p.s); } catch (e) { app = null; }
+      if (!app) return spentPage();
+      return installPage(app);
+    }
+
+    return json(404, { error: 'not found' });
+  },
+};
