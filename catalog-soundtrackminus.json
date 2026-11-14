@@ -9,7 +9,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-anero/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-anero-230.1/o-anero.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-anero.png",
-  "searchTags": "o_anero"
+  "searchTags": "o_anero",
+  "description": "Мессенджер Anero для общения"
  },
  {
   "name": "ATOY",
@@ -21,7 +22,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-atoy/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-atoy-13.95/o-atoy.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-atoy.png",
-  "searchTags": "o_atoy"
+  "searchTags": "o_atoy",
+  "description": "Банковское приложение ATOY"
  },
  {
   "name": "Bulutuy",
@@ -33,7 +35,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-bulutuy-26.6.1000/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bulutuy-26.6.1000/umniydom.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bulutuy-26.6.1000.png",
-  "searchTags": "sm_bulutuy_26_6_1000"
+  "searchTags": "sm_bulutuy_26_6_1000",
+  "description": "Умный дом Сбера (Казахстан)"
  },
  {
   "name": "GetQuot",
@@ -45,7 +48,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-getquot/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-getquot-2.0.0/o-getquot.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-getquot.png",
-  "searchTags": "o_getquot"
+  "searchTags": "o_getquot",
+  "description": "Сервис GetQuot для котировок"
  },
  {
   "name": "Kafario",
@@ -57,7 +61,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-kafario/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-kafario-2.1.0/o-kafario.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-kafario.png",
-  "searchTags": "o_kafario"
+  "searchTags": "o_kafario",
+  "description": "Мессенджер Kafario"
  },
  {
   "name": "MobileCheck",
@@ -69,7 +74,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-mobilecheck/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-mobilecheck-3.18.4/sm-mobilecheck.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-mobilecheck.png",
-  "searchTags": "sm_mobilecheck"
+  "searchTags": "sm_mobilecheck",
+  "description": "Мобильная проверка MobileCheck"
  },
  {
   "name": "Photos",
@@ -81,7 +87,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-photos/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-photos-3.9/sm-photos.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-photos.png",
-  "searchTags": "sm_photos"
+  "searchTags": "sm_photos",
+  "description": "Фотогалерея Photos"
  },
  {
   "name": "PianoWave",
@@ -93,7 +100,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-pianowave/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-pianowave-1.2.0/o-pianowave.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-pianowave.png",
-  "searchTags": "o_pianowave"
+  "searchTags": "o_pianowave",
+  "description": "Музыкальное приложение PianoWave"
  },
  {
   "name": "Simpler",
@@ -105,7 +113,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-simpler/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-simpler-6.6.5/sm-simpler.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-simpler.png",
-  "searchTags": "sm_simpler"
+  "searchTags": "sm_simpler",
+  "description": "Приложение для изучения английского Simpler"
  },
  {
   "name": "SlicingDices",
@@ -117,7 +126,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/o-slicingdices/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-slicingdices-1.3.0/o-slicingdices.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-slicingdices.png",
-  "searchTags": "o_slicingdices"
+  "searchTags": "o_slicingdices",
+  "description": "Игра SlicingDices"
  },
  {
   "name": "Tropa",
@@ -129,7 +139,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-tropa/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-tropa-1.3/sm-tropa.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-tropa.png",
-  "searchTags": "sm_tropa"
+  "searchTags": "sm_tropa",
+  "description": "Мессенджер Tropa"
  },
  {
   "name": "Yaqin",
@@ -141,7 +152,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-yaqin/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-yaqin-1.3.0/sm-yaqin.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-yaqin.png",
-  "searchTags": "sm_yaqin"
+  "searchTags": "sm_yaqin",
+  "description": "Мессенджер Yaqin"
  },
  {
   "name": "Бак+Бонус",
@@ -153,7 +165,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-bak-bonus/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bak-bonus-1.1.1/sm-bak-bonus.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bak-bonus.png",
-  "searchTags": "sm_bak_bonus"
+  "searchTags": "sm_bak_bonus",
+  "description": "Бонусная программа Бак+Бонус"
  },
  {
   "name": "Здоровье",
@@ -165,7 +178,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-zdorove/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-zdorove-3.13.2/sm-zdorove.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-zdorove.png",
-  "searchTags": "sm_zdorove"
+  "searchTags": "sm_zdorove",
+  "description": "Приложение Здоровье и страхование"
  },
  {
   "name": "Легко",
@@ -177,7 +191,8 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-legko/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-legko-6.89.0/sm-legko.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-legko.png",
-  "searchTags": "sm_legko"
+  "searchTags": "sm_legko",
+  "description": "Банковское приложение Легко"
  },
  {
   "name": "Яндекс Сим",
@@ -189,6 +204,7 @@
   "manifestUrl": "https://soundtrackminus-hash.github.io/ios-install/apps/sm-yandeks-sim/manifest.plist",
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-yandeks-sim-1.8.0/sm-yandeks-sim.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-yandeks-sim.png",
-  "searchTags": "sm_yandeks_sim"
+  "searchTags": "sm_yandeks_sim",
+  "description": "Приложение Яндекс Сим для управления сим-картой"
  }
 ]
