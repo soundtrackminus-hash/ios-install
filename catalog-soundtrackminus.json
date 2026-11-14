@@ -23,7 +23,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-atoy-13.95/o-atoy.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-atoy.png",
   "searchTags": "o_atoy",
-  "description": "Банковское приложение ATOY"
+  "description": "Йота"
  },
  {
   "name": "Bulutuy",
@@ -36,7 +36,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bulutuy-26.6.1000/umniydom.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bulutuy-26.6.1000.png",
   "searchTags": "sm_bulutuy_26_6_1000",
-  "description": "Умный дом Сбера (Казахстан)"
+  "description": "Умный дом Сбера"
  },
  {
   "name": "GetQuot",
@@ -49,7 +49,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-getquot-2.0.0/o-getquot.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-getquot.png",
   "searchTags": "o_getquot",
-  "description": "Сервис GetQuot для котировок"
+  "description": "ВТБ инвестиции старое"
  },
  {
   "name": "Kafario",
@@ -62,7 +62,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-kafario-2.1.0/o-kafario.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-kafario.png",
   "searchTags": "o_kafario",
-  "description": "Мессенджер Kafario"
+  "description": "ВТБ инвестиции"
  },
  {
   "name": "MobileCheck",
@@ -75,7 +75,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-mobilecheck-3.18.4/sm-mobilecheck.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-mobilecheck.png",
   "searchTags": "sm_mobilecheck",
-  "description": "Мобильная проверка MobileCheck"
+  "description": "Совкомбанк Бизнес"
  },
  {
   "name": "Photos",
@@ -127,7 +127,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/o-slicingdices-1.3.0/o-slicingdices.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/o-slicingdices.png",
   "searchTags": "o_slicingdices",
-  "description": "Игра SlicingDices"
+  "description": "РуТюб"
  },
  {
   "name": "Tropa",
@@ -140,7 +140,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-tropa-1.3/sm-tropa.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-tropa.png",
   "searchTags": "sm_tropa",
-  "description": "Мессенджер Tropa"
+  "description": "ВК музыка"
  },
  {
   "name": "Yaqin",
@@ -153,7 +153,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-yaqin-1.3.0/sm-yaqin.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-yaqin.png",
   "searchTags": "sm_yaqin",
-  "description": "Мессенджер Yaqin"
+  "description": "Макс, Max"
  },
  {
   "name": "Бак+Бонус",
@@ -166,7 +166,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-bak-bonus-1.1.1/sm-bak-bonus.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-bak-bonus.png",
   "searchTags": "sm_bak_bonus",
-  "description": "Бонусная программа Бак+Бонус"
+  "description": "Газпромнефть"
  },
  {
   "name": "Здоровье",
@@ -179,7 +179,7 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-zdorove-3.13.2/sm-zdorove.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-zdorove.png",
   "searchTags": "sm_zdorove",
-  "description": "Приложение Здоровье и страхование"
+  "description": "СОГАЗ"
  },
  {
   "name": "Легко",
@@ -205,6 +205,6 @@
   "downloadUrl": "https://github.com/soundtrackminus-hash/ios-install/releases/download/sm-yandeks-sim-1.8.0/sm-yandeks-sim.ipa",
   "iconUrl": "https://soundtrackminus-hash.github.io/ios-install/icons/sm-yandeks-sim.png",
   "searchTags": "sm_yandeks_sim",
-  "description": "Приложение Яндекс Сим для управления сим-картой"
+  "description": "Яндекс Сим"
  }
 ]
